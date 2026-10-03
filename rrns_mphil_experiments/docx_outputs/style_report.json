@@ -1,0 +1,172 @@
+{
+  "input": "C:\\Users\\PehAttaJoseph\\Documents\\GitHub\\Edge-AI-Accelerator\\rrns_mphil_experiments\\docx_outputs\\MPhil_Thesis_Compilation_Working_Draft_v1_final_working.docx",
+  "fonts_by_char_count": {
+    "Times New Roman": 3067,
+    "Cambria Math": 41,
+    "Sans Serif Collection": 2
+  },
+  "direct_run_formatting_runs": 214,
+  "direct_paragraph_formatting_paragraphs": 837,
+  "heading_like_paragraphs_not_heading_style": [
+    {
+      "para_index": 2,
+      "text": "BY\n\nPEH ATTA JOSEPH",
+      "style": "Normal"
+    },
+    {
+      "para_index": 4,
+      "text": "[MONTH AND YEAR TO BE CONFIRMED]",
+      "style": "Normal"
+    },
+    {
+      "para_index": 31,
+      "text": "ABFT\tAlgorithm-Based Fault Tolerance",
+      "style": "Normal"
+    },
+    {
+      "para_index": 32,
+      "text": "ASIC\tApplication-Specific Integrated Circuit",
+      "style": "Normal"
+    },
+    {
+      "para_index": 33,
+      "text": "CNN\tConvolutional Neural Network",
+      "style": "Normal"
+    },
+    {
+      "para_index": 34,
+      "text": "CRT\tChinese Remainder Theorem",
+      "style": "Normal"
+    },
+    {
+      "para_index": 35,
+      "text": "DNN\tDeep Neural Network",
+      "style": "Normal"
+    },
+    {
+      "para_index": 36,
+      "text": "FPGA\tField-Programmable Gate Array",
+      "style": "Normal"
+    },
+    {
+      "para_index": 37,
+      "text": "MAC\tMultiply-and-Accumulate",
+      "style": "Normal"
+    },
+    {
+      "para_index": 38,
+      "text": "MRC\tMixed Radix Conversion",
+      "style": "Normal"
+    },
+    {
+      "para_index": 39,
+      "text": "PE\tProcessing Element",
+      "style": "Normal"
+    },
+    {
+      "para_index": 40,
+      "text": "QNN\tQuantized Neural Network",
+      "style": "Normal"
+    },
+    {
+      "para_index": 41,
+      "text": "RNS\tResidue Number System",
+      "style": "Normal"
+    },
+    {
+      "para_index": 42,
+      "text": "RRNS\tRedundant Residue Number System",
+      "style": "Normal"
+    },
+    {
+      "para_index": 285,
+      "text": "Table 2.1\nComparison of the reviewed literature",
+      "style": "Table Caption"
+    },
+    {
+      "para_index": 327,
+      "text": "Table 3.1\nFinal Python fault-injection configuration",
+      "style": "Table Caption"
+    },
+    {
+      "para_index": 418,
+      "text": "Table 4.2\nClean exact-equivalence results by test case",
+      "style": "Table Caption"
+    },
+    {
+      "para_index": 425,
+      "text": "Table 4.3\nInformation-range verification",
+      "style": "Table Caption"
+    },
+    {
+      "para_index": 429,
+      "text": "Table 4.4\nAggregate RRNS fault-injection results",
+      "style": "Table Caption"
+    },
+    {
+      "para_index": 448,
+      "text": "Table 4.6\nStructural redundancy measures",
+      "style": "Table Caption"
+    }
+  ],
+  "examples": {
+    "direct_paragraph_formatting": [
+      {
+        "para_index": 1,
+        "text": "SELF-CHECKING REDUNDANT RESIDUE NUMBER SYSTEM FOR\nQUANTIZED FIXED-POINT CONVOLUTION LAYERS IN\nEDGE AI HARDWARE ACCELERAT",
+        "style": "Normal"
+      },
+      {
+        "para_index": 2,
+        "text": "BY\n\nPEH ATTA JOSEPH",
+        "style": "Normal"
+      },
+      {
+        "para_index": 3,
+        "text": "A thesis submitted to the [DEPARTMENT AND UNIVERSITY TO BE INSERTED] in partial fulfilment of the requirements for the a",
+        "style": "Normal"
+      },
+      {
+        "para_index": 4,
+        "text": "[MONTH AND YEAR TO BE CONFIRMED]",
+        "style": "Normal"
+      },
+      {
+        "para_index": 5,
+        "text": "",
+        "style": "Normal"
+      }
+    ],
+    "direct_run_formatting": [
+      {
+        "para_index": 1,
+        "run_text": "SELF-CHECKING REDUNDANT RESIDUE NUMBER SYSTEM FOR",
+        "style": "Normal"
+      },
+      {
+        "para_index": 1,
+        "run_text": "\nQUANTIZED FIXED-POINT CONVOLUTION LAYERS IN",
+        "style": "Normal"
+      },
+      {
+        "para_index": 1,
+        "run_text": "\nEDGE AI HARDWARE ACCELERATORS",
+        "style": "Normal"
+      },
+      {
+        "para_index": 2,
+        "run_text": "BY",
+        "style": "Normal"
+      },
+      {
+        "para_index": 2,
+        "run_text": "\n",
+        "style": "Normal"
+      }
+    ]
+  },
+  "notes": [
+    "Direct formatting is not always wrong, but it often causes inconsistent output when templates change.",
+    "Heading-like paragraphs not using Heading styles can break TOC and accessibility."
+  ]
+}

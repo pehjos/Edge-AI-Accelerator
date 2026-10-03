@@ -1,0 +1,1323 @@
+#! /ucrt64/bin/vvp
+:ivl_version "13.0 (stable)" "(v13_0)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "C:\msys64\ucrt64\lib\ivl\system.vpi";
+:vpi_module "C:\msys64\ucrt64\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\msys64\ucrt64\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\msys64\ucrt64\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\msys64\ucrt64\lib\ivl\va_math.vpi";
+:vpi_module "C:\msys64\ucrt64\lib\ivl\v2009.vpi";
+S_000002b2765a9f70 .scope package, "$unit" "$unit" 2 1;
+ .timescale 0 0;
+S_000002b2765aed90 .scope module, "tb_self_checking_rrns_mac_system_b" "tb_self_checking_rrns_mac_system_b" 3 3;
+ .timescale -9 -12;
+P_000002b2765791f0 .param/l "IN_WIDTH" 1 3 6, +C4<00000000000000000000000000001000>;
+P_000002b276579228 .param/l "TAP_COUNT" 1 3 5, +C4<00000000000000000000000000001001>;
+v000002b27671c650 .array/s "activations", 8 0, 7 0;
+v000002b27671bd90_0 .net/s "binary_dot_product", 15 0, v000002b27671cab0_0;  1 drivers
+v000002b27671bed0_0 .net "checked_residue_m29", 5 0, v000002b27671b750_0;  1 drivers
+v000002b27671b1b0_0 .net "checked_residue_m31", 5 0, v000002b27671b6b0_0;  1 drivers
+v000002b27671b250_0 .net "checked_residue_m37", 5 0, v000002b27671cb50_0;  1 drivers
+v000002b27671bf70_0 .net "checked_residue_m41", 5 0, v000002b27671cbf0_0;  1 drivers
+v000002b27671b890_0 .net "checker_valid", 0 0, v000002b2765af970_0;  1 drivers
+v000002b27671b930_0 .net "clean_residue_m29", 5 0, v000002b2765b0050_0;  1 drivers
+v000002b27671c150_0 .net "clean_residue_m31", 5 0, v000002b2765afd30_0;  1 drivers
+v000002b27671c790_0 .net "clean_residue_m37", 5 0, v000002b27671ba70_0;  1 drivers
+v000002b27671c830_0 .net "clean_residue_m41", 5 0, v000002b27671ce70_0;  1 drivers
+v000002b27671c970_0 .var/2s "fail_count", 31 0;
+v000002b27671ca10_0 .var "fault_residue_m29", 5 0;
+v000002b2767206e0_0 .var "fault_residue_m31", 5 0;
+v000002b276721680_0 .var "fault_residue_m37", 5 0;
+v000002b276721860_0 .var "fault_residue_m41", 5 0;
+v000002b276720500_0 .var/2s "pass_count", 31 0;
+v000002b276721900_0 .net "predicted_redundant", 5 0, v000002b2765affb0_0;  1 drivers
+v000002b276720820_0 .net/s "reconstructed_signed", 15 0, v000002b2765afb50_0;  1 drivers
+v000002b276720280_0 .net "reconstructed_unsigned", 15 0, v000002b2765b04b0_0;  1 drivers
+v000002b276720c80_0 .net "syndrome", 5 0, v000002b2765b0190_0;  1 drivers
+v000002b2767212c0_0 .var/2s "tap", 31 0;
+v000002b2767219a0_0 .var "use_fault_override", 0 0;
+v000002b276721400 .array/s "weights", 8 0, 7 0;
+S_000002b27659dbd0 .scope autotask, "check_equal_bit" "check_equal_bit" 3 110, 3 110 0, S_000002b2765aed90;
+ .timescale -9 -12;
+v000002b2765af650_0 .var "expected", 0 0;
+v000002b2765af6f0_0 .var/str "label";
+v000002b2765b0690_0 .var "observed", 0 0;
+TD_tb_self_checking_rrns_mac_system_b.check_equal_bit ;
+    %load/vec4 v000002b2765b0690_0;
+    %load/vec4 v000002b2765af650_0;
+    %cmp/ne;
+    %jmp/0xz  T_0.0, 6;
+    %vpi_call/w 3 113 "$display", "FAIL: %s observed=%0b expected=%0b", v000002b2765af6f0_0, v000002b2765b0690_0, v000002b2765af650_0 {0 0 0};
+    %load/vec4 v000002b27671c970_0;
+    %addi 1, 0, 32;
+    %store/vec4 v000002b27671c970_0, 0, 32;
+    %jmp T_0.1;
+T_0.0 ;
+    %vpi_call/w 3 116 "$display", "PASS: %s observed=%0b", v000002b2765af6f0_0, v000002b2765b0690_0 {0 0 0};
+    %load/vec4 v000002b276720500_0;
+    %addi 1, 0, 32;
+    %store/vec4 v000002b276720500_0, 0, 32;
+T_0.1 ;
+    %end;
+S_000002b2765a8390 .scope autotask, "check_equal_int" "check_equal_int" 3 98, 3 98 0, S_000002b2765aed90;
+ .timescale -9 -12;
+v000002b2765b00f0_0 .var/2s "expected", 31 0;
+v000002b2765af790_0 .var/str "label";
+v000002b2765af5b0_0 .var/2s "observed", 31 0;
+TD_tb_self_checking_rrns_mac_system_b.check_equal_int ;
+    %load/vec4 v000002b2765af5b0_0;
+    %load/vec4 v000002b2765b00f0_0;
+    %cmp/ne;
+    %jmp/0xz  T_1.2, 6;
+    %vpi_call/w 3 101 "$display", "FAIL: %s observed=%0d expected=%0d", v000002b2765af790_0, v000002b2765af5b0_0, v000002b2765b00f0_0 {0 0 0};
+    %load/vec4 v000002b27671c970_0;
+    %addi 1, 0, 32;
+    %store/vec4 v000002b27671c970_0, 0, 32;
+    %jmp T_1.3;
+T_1.2 ;
+    %vpi_call/w 3 104 "$display", "PASS: %s observed=%0d", v000002b2765af790_0, v000002b2765af5b0_0 {0 0 0};
+    %load/vec4 v000002b276720500_0;
+    %addi 1, 0, 32;
+    %store/vec4 v000002b276720500_0, 0, 32;
+T_1.3 ;
+    %end;
+S_000002b2765a8520 .scope autotask, "clear_inputs" "clear_inputs" 3 61, 3 61 0, S_000002b2765aed90;
+ .timescale -9 -12;
+TD_tb_self_checking_rrns_mac_system_b.clear_inputs ;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v000002b2767212c0_0, 0, 32;
+T_2.4 ; Top of for-loop
+    %load/vec4 v000002b2767212c0_0;
+    %cmpi/s 9, 0, 32;
+	  %jmp/0xz T_2.5, 5;
+    %pushi/vec4 0, 0, 8;
+    %ix/getv/s 4, v000002b2767212c0_0;
+    %store/vec4a v000002b27671c650, 4, 0;
+    %pushi/vec4 0, 0, 8;
+    %ix/getv/s 4, v000002b2767212c0_0;
+    %store/vec4a v000002b276721400, 4, 0;
+T_2.6 ; for-loop step statement
+    %load/vec4 v000002b2767212c0_0;
+    %addi 1, 0, 32;
+    %store/vec4 v000002b2767212c0_0, 0, 32;
+    %jmp T_2.4;
+T_2.5 ; for-loop exit label
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002b2767219a0_0, 0, 1;
+    %pushi/vec4 0, 0, 6;
+    %store/vec4 v000002b27671ca10_0, 0, 6;
+    %pushi/vec4 0, 0, 6;
+    %store/vec4 v000002b2767206e0_0, 0, 6;
+    %pushi/vec4 0, 0, 6;
+    %store/vec4 v000002b276721680_0, 0, 6;
+    %pushi/vec4 0, 0, 6;
+    %store/vec4 v000002b276721860_0, 0, 6;
+    %end;
+S_000002b2765ad7a0 .scope module, "dut" "self_checking_rrns_mac_system_b" 3 37, 4 1 0, S_000002b2765aed90;
+ .timescale 0 0;
+    .port_info 0 /INPUT 72 "activations";
+    .port_info 1 /INPUT 72 "weights";
+    .port_info 2 /INPUT 1 "use_fault_override";
+    .port_info 3 /INPUT 6 "fault_residue_m29";
+    .port_info 4 /INPUT 6 "fault_residue_m31";
+    .port_info 5 /INPUT 6 "fault_residue_m37";
+    .port_info 6 /INPUT 6 "fault_residue_m41";
+    .port_info 7 /OUTPUT 16 "binary_dot_product";
+    .port_info 8 /OUTPUT 6 "clean_residue_m29";
+    .port_info 9 /OUTPUT 6 "clean_residue_m31";
+    .port_info 10 /OUTPUT 6 "clean_residue_m37";
+    .port_info 11 /OUTPUT 6 "clean_residue_m41";
+    .port_info 12 /OUTPUT 6 "checked_residue_m29";
+    .port_info 13 /OUTPUT 6 "checked_residue_m31";
+    .port_info 14 /OUTPUT 6 "checked_residue_m37";
+    .port_info 15 /OUTPUT 6 "checked_residue_m41";
+    .port_info 16 /OUTPUT 1 "checker_valid";
+    .port_info 17 /OUTPUT 16 "reconstructed_unsigned";
+    .port_info 18 /OUTPUT 16 "reconstructed_signed";
+    .port_info 19 /OUTPUT 6 "predicted_redundant";
+    .port_info 20 /OUTPUT 6 "syndrome";
+P_000002b276578a70 .param/l "IN_WIDTH" 0 4 2, +C4<00000000000000000000000000001000>;
+P_000002b276578aa8 .param/l "TAP_COUNT" 0 4 3, +C4<00000000000000000000000000001001>;
+v000002b27671c650_0 .array/port v000002b27671c650, 0;
+L_000002b276593710 .functor BUFZ 8, v000002b27671c650_0, C4<00000000>, C4<00000000>, C4<00000000>;
+v000002b27671c650_1 .array/port v000002b27671c650, 1;
+L_000002b276593d30 .functor BUFZ 8, v000002b27671c650_1, C4<00000000>, C4<00000000>, C4<00000000>;
+v000002b27671c650_2 .array/port v000002b27671c650, 2;
+L_000002b276593a90 .functor BUFZ 8, v000002b27671c650_2, C4<00000000>, C4<00000000>, C4<00000000>;
+v000002b27671c650_3 .array/port v000002b27671c650, 3;
+L_000002b2765934e0 .functor BUFZ 8, v000002b27671c650_3, C4<00000000>, C4<00000000>, C4<00000000>;
+v000002b27671c650_4 .array/port v000002b27671c650, 4;
+L_000002b276594040 .functor BUFZ 8, v000002b27671c650_4, C4<00000000>, C4<00000000>, C4<00000000>;
+v000002b27671c650_5 .array/port v000002b27671c650, 5;
+L_000002b276593be0 .functor BUFZ 8, v000002b27671c650_5, C4<00000000>, C4<00000000>, C4<00000000>;
+v000002b27671c650_6 .array/port v000002b27671c650, 6;
+L_000002b276593550 .functor BUFZ 8, v000002b27671c650_6, C4<00000000>, C4<00000000>, C4<00000000>;
+v000002b27671c650_7 .array/port v000002b27671c650, 7;
+L_000002b2765937f0 .functor BUFZ 8, v000002b27671c650_7, C4<00000000>, C4<00000000>, C4<00000000>;
+v000002b27671c650_8 .array/port v000002b27671c650, 8;
+L_000002b276593b00 .functor BUFZ 8, v000002b27671c650_8, C4<00000000>, C4<00000000>, C4<00000000>;
+v000002b276721400_0 .array/port v000002b276721400, 0;
+L_000002b2765939b0 .functor BUFZ 8, v000002b276721400_0, C4<00000000>, C4<00000000>, C4<00000000>;
+v000002b276721400_1 .array/port v000002b276721400, 1;
+L_000002b276593940 .functor BUFZ 8, v000002b276721400_1, C4<00000000>, C4<00000000>, C4<00000000>;
+v000002b276721400_2 .array/port v000002b276721400, 2;
+L_000002b2765940b0 .functor BUFZ 8, v000002b276721400_2, C4<00000000>, C4<00000000>, C4<00000000>;
+v000002b276721400_3 .array/port v000002b276721400, 3;
+L_000002b276593240 .functor BUFZ 8, v000002b276721400_3, C4<00000000>, C4<00000000>, C4<00000000>;
+v000002b276721400_4 .array/port v000002b276721400, 4;
+L_000002b2765932b0 .functor BUFZ 8, v000002b276721400_4, C4<00000000>, C4<00000000>, C4<00000000>;
+v000002b276721400_5 .array/port v000002b276721400, 5;
+L_000002b276593a20 .functor BUFZ 8, v000002b276721400_5, C4<00000000>, C4<00000000>, C4<00000000>;
+v000002b276721400_6 .array/port v000002b276721400, 6;
+L_000002b276593e10 .functor BUFZ 8, v000002b276721400_6, C4<00000000>, C4<00000000>, C4<00000000>;
+v000002b276721400_7 .array/port v000002b276721400, 7;
+L_000002b276593b70 .functor BUFZ 8, v000002b276721400_7, C4<00000000>, C4<00000000>, C4<00000000>;
+v000002b276721400_8 .array/port v000002b276721400, 8;
+L_000002b276593cc0 .functor BUFZ 8, v000002b276721400_8, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276593320 .functor BUFZ 8, v000002b27671c650_0, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276593390 .functor BUFZ 8, v000002b27671c650_1, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276593400 .functor BUFZ 8, v000002b27671c650_2, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276593860 .functor BUFZ 8, v000002b27671c650_3, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276593630 .functor BUFZ 8, v000002b27671c650_4, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b2765936a0 .functor BUFZ 8, v000002b27671c650_5, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276593780 .functor BUFZ 8, v000002b27671c650_6, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b2765938d0 .functor BUFZ 8, v000002b27671c650_7, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b2767241d0 .functor BUFZ 8, v000002b27671c650_8, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276724160 .functor BUFZ 8, v000002b276721400_0, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276724320 .functor BUFZ 8, v000002b276721400_1, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276724b70 .functor BUFZ 8, v000002b276721400_2, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b2767242b0 .functor BUFZ 8, v000002b276721400_3, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b2767248d0 .functor BUFZ 8, v000002b276721400_4, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276724400 .functor BUFZ 8, v000002b276721400_5, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276724da0 .functor BUFZ 8, v000002b276721400_6, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276724a90 .functor BUFZ 8, v000002b276721400_7, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276724b00 .functor BUFZ 8, v000002b276721400_8, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b2767245c0 .functor BUFZ 8, v000002b27671c650_0, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b2767246a0 .functor BUFZ 8, v000002b27671c650_1, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276724cc0 .functor BUFZ 8, v000002b27671c650_2, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276724630 .functor BUFZ 8, v000002b27671c650_3, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276724940 .functor BUFZ 8, v000002b27671c650_4, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276724470 .functor BUFZ 8, v000002b27671c650_5, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276724710 .functor BUFZ 8, v000002b27671c650_6, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276724780 .functor BUFZ 8, v000002b27671c650_7, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b2767249b0 .functor BUFZ 8, v000002b27671c650_8, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276724240 .functor BUFZ 8, v000002b276721400_0, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b2767247f0 .functor BUFZ 8, v000002b276721400_1, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276724be0 .functor BUFZ 8, v000002b276721400_2, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b2767244e0 .functor BUFZ 8, v000002b276721400_3, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276724f60 .functor BUFZ 8, v000002b276721400_4, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276724860 .functor BUFZ 8, v000002b276721400_5, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276724c50 .functor BUFZ 8, v000002b276721400_6, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276724550 .functor BUFZ 8, v000002b276721400_7, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276724d30 .functor BUFZ 8, v000002b276721400_8, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276724a20 .functor BUFZ 8, v000002b27671c650_0, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276724e10 .functor BUFZ 8, v000002b27671c650_1, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276724e80 .functor BUFZ 8, v000002b27671c650_2, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276725040 .functor BUFZ 8, v000002b27671c650_3, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276724fd0 .functor BUFZ 8, v000002b27671c650_4, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276724ef0 .functor BUFZ 8, v000002b27671c650_5, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276724390 .functor BUFZ 8, v000002b27671c650_6, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b2767256b0 .functor BUFZ 8, v000002b27671c650_7, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b2767259c0 .functor BUFZ 8, v000002b27671c650_8, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276725720 .functor BUFZ 8, v000002b276721400_0, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276725c60 .functor BUFZ 8, v000002b276721400_1, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276725790 .functor BUFZ 8, v000002b276721400_2, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276725480 .functor BUFZ 8, v000002b276721400_3, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276725800 .functor BUFZ 8, v000002b276721400_4, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276725170 .functor BUFZ 8, v000002b276721400_5, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276725330 .functor BUFZ 8, v000002b276721400_6, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276725b10 .functor BUFZ 8, v000002b276721400_7, C4<00000000>, C4<00000000>, C4<00000000>;
+L_000002b276725a30 .functor BUFZ 8, v000002b276721400_8, C4<00000000>, C4<00000000>, C4<00000000>;
+v000002b27671b610 .array "activations", 8 0;
+v000002b27671b610_0 .net/s v000002b27671b610 0, 7 0, v000002b27671c650_0; 1 drivers
+v000002b27671b610_1 .net/s v000002b27671b610 1, 7 0, v000002b27671c650_1; 1 drivers
+v000002b27671b610_2 .net/s v000002b27671b610 2, 7 0, v000002b27671c650_2; 1 drivers
+v000002b27671b610_3 .net/s v000002b27671b610 3, 7 0, v000002b27671c650_3; 1 drivers
+v000002b27671b610_4 .net/s v000002b27671b610 4, 7 0, v000002b27671c650_4; 1 drivers
+v000002b27671b610_5 .net/s v000002b27671b610 5, 7 0, v000002b27671c650_5; 1 drivers
+v000002b27671b610_6 .net/s v000002b27671b610 6, 7 0, v000002b27671c650_6; 1 drivers
+v000002b27671b610_7 .net/s v000002b27671b610 7, 7 0, v000002b27671c650_7; 1 drivers
+v000002b27671b610_8 .net/s v000002b27671b610 8, 7 0, v000002b27671c650_8; 1 drivers
+v000002b27671cab0_0 .var/s "binary_dot_product", 15 0;
+v000002b27671b750_0 .var "checked_residue_m29", 5 0;
+v000002b27671b6b0_0 .var "checked_residue_m31", 5 0;
+v000002b27671cb50_0 .var "checked_residue_m37", 5 0;
+v000002b27671cbf0_0 .var "checked_residue_m41", 5 0;
+v000002b27671cd30_0 .net "checker_valid", 0 0, v000002b2765af970_0;  alias, 1 drivers
+v000002b27671b390_0 .net "clean_residue_m29", 5 0, v000002b2765b0050_0;  alias, 1 drivers
+v000002b27671c330_0 .net "clean_residue_m31", 5 0, v000002b2765afd30_0;  alias, 1 drivers
+v000002b27671cc90_0 .net "clean_residue_m37", 5 0, v000002b27671ba70_0;  alias, 1 drivers
+v000002b27671cf10_0 .net "clean_residue_m41", 5 0, v000002b27671ce70_0;  alias, 1 drivers
+v000002b27671b9d0_0 .var/2s "dot_product_int", 31 0;
+v000002b27671bb10_0 .net "fault_residue_m29", 5 0, v000002b27671ca10_0;  1 drivers
+v000002b27671c0b0_0 .net "fault_residue_m31", 5 0, v000002b2767206e0_0;  1 drivers
+v000002b27671cfb0_0 .net "fault_residue_m37", 5 0, v000002b276721680_0;  1 drivers
+v000002b27671be30_0 .net "fault_residue_m41", 5 0, v000002b276721860_0;  1 drivers
+v000002b27671bcf0_0 .net "predicted_redundant", 5 0, v000002b2765affb0_0;  alias, 1 drivers
+v000002b27671b2f0_0 .net/s "reconstructed_signed", 15 0, v000002b2765afb50_0;  alias, 1 drivers
+v000002b27671b110_0 .net "reconstructed_unsigned", 15 0, v000002b2765b04b0_0;  alias, 1 drivers
+v000002b27671c8d0_0 .net "syndrome", 5 0, v000002b2765b0190_0;  alias, 1 drivers
+v000002b27671c3d0_0 .var/i "tap", 31 0;
+v000002b27671b7f0_0 .net "use_fault_override", 0 0, v000002b2767219a0_0;  1 drivers
+v000002b27671bc50 .array "weights", 8 0;
+v000002b27671bc50_0 .net/s v000002b27671bc50 0, 7 0, v000002b276721400_0; 1 drivers
+v000002b27671bc50_1 .net/s v000002b27671bc50 1, 7 0, v000002b276721400_1; 1 drivers
+v000002b27671bc50_2 .net/s v000002b27671bc50 2, 7 0, v000002b276721400_2; 1 drivers
+v000002b27671bc50_3 .net/s v000002b27671bc50 3, 7 0, v000002b276721400_3; 1 drivers
+v000002b27671bc50_4 .net/s v000002b27671bc50 4, 7 0, v000002b276721400_4; 1 drivers
+v000002b27671bc50_5 .net/s v000002b27671bc50 5, 7 0, v000002b276721400_5; 1 drivers
+v000002b27671bc50_6 .net/s v000002b27671bc50 6, 7 0, v000002b276721400_6; 1 drivers
+v000002b27671bc50_7 .net/s v000002b27671bc50 7, 7 0, v000002b276721400_7; 1 drivers
+v000002b27671bc50_8 .net/s v000002b27671bc50 8, 7 0, v000002b276721400_8; 1 drivers
+E_000002b27659ce10/0 .event anyedge, v000002b27671b7f0_0, v000002b27671bb10_0, v000002b27671c0b0_0, v000002b27671cfb0_0;
+E_000002b27659ce10/1 .event anyedge, v000002b27671be30_0, v000002b2765b0050_0, v000002b2765afd30_0, v000002b27671ba70_0;
+E_000002b27659ce10/2 .event anyedge, v000002b27671ce70_0;
+E_000002b27659ce10 .event/or E_000002b27659ce10/0, E_000002b27659ce10/1, E_000002b27659ce10/2;
+E_000002b27659ce90/0 .event anyedge, v000002b27671b610_0, v000002b27671b610_1, v000002b27671b610_2, v000002b27671b610_3;
+E_000002b27659ce90/1 .event anyedge, v000002b27671b610_4, v000002b27671b610_5, v000002b27671b610_6, v000002b27671b610_7;
+E_000002b27659ce90/2 .event anyedge, v000002b27671b610_8, v000002b27671bc50_0, v000002b27671bc50_1, v000002b27671bc50_2;
+E_000002b27659ce90/3 .event anyedge, v000002b27671bc50_3, v000002b27671bc50_4, v000002b27671bc50_5, v000002b27671bc50_6;
+E_000002b27659ce90/4 .event anyedge, v000002b27671bc50_7, v000002b27671bc50_8, v000002b27671b9d0_0;
+E_000002b27659ce90 .event/or E_000002b27659ce90/0, E_000002b27659ce90/1, E_000002b27659ce90/2, E_000002b27659ce90/3, E_000002b27659ce90/4;
+S_000002b276563070 .scope module, "checker_u" "rrns_checker_system_b" 4 97, 5 1 0, S_000002b2765ad7a0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 6 "residue_m29";
+    .port_info 1 /INPUT 6 "residue_m31";
+    .port_info 2 /INPUT 6 "residue_m37";
+    .port_info 3 /INPUT 6 "residue_m41";
+    .port_info 4 /OUTPUT 1 "checker_valid";
+    .port_info 5 /OUTPUT 16 "reconstructed_unsigned";
+    .port_info 6 /OUTPUT 16 "reconstructed_signed";
+    .port_info 7 /OUTPUT 6 "predicted_redundant";
+    .port_info 8 /OUTPUT 6 "syndrome";
+P_000002b2765a79f0 .param/l "BALANCED_LIMIT" 1 5 15, +C4<00000000000000000100000011110111>;
+P_000002b2765a7a28 .param/l "CRT_COEFF_M29" 1 5 17, +C4<00000000000000000101100110011100>;
+P_000002b2765a7a60 .param/l "CRT_COEFF_M31" 1 5 18, +C4<00000000000000000100101101110010>;
+P_000002b2765a7a98 .param/l "CRT_COEFF_M37" 1 5 19, +C4<00000000000000000101111011010001>;
+P_000002b2765a7ad0 .param/l "INFORMATIVE_DYNAMIC_RANGE" 1 5 14, +C4<00000000000000001000000111101111>;
+P_000002b2765a7b08 .param/l "MR" 1 5 13, +C4<00000000000000000000000000101001>;
+v000002b2765af970_0 .var "checker_valid", 0 0;
+v000002b2765affb0_0 .var "predicted_redundant", 5 0;
+v000002b2765af470_0 .var/2s "predicted_redundant_int", 31 0;
+v000002b2765afb50_0 .var/s "reconstructed_signed", 15 0;
+v000002b2765afa10_0 .var/2s "reconstructed_signed_int", 31 0;
+v000002b2765b04b0_0 .var "reconstructed_unsigned", 15 0;
+v000002b2765af150_0 .var/2s "reconstructed_unsigned_int", 31 0;
+v000002b2765af330_0 .net "residue_m29", 5 0, v000002b27671b750_0;  alias, 1 drivers
+v000002b2765b0550_0 .net "residue_m31", 5 0, v000002b27671b6b0_0;  alias, 1 drivers
+v000002b2765b0910_0 .net "residue_m37", 5 0, v000002b27671cb50_0;  alias, 1 drivers
+v000002b2765af510_0 .net "residue_m41", 5 0, v000002b27671cbf0_0;  alias, 1 drivers
+v000002b2765b0190_0 .var "syndrome", 5 0;
+v000002b2765aff10_0 .var/2s "syndrome_int", 31 0;
+E_000002b27659cd10/0 .event anyedge, v000002b2765af330_0, v000002b2765b0550_0, v000002b2765b0910_0, v000002b2765af150_0;
+E_000002b27659cd10/1 .event anyedge, v000002b2765afa10_0, v000002b2765af510_0, v000002b2765af470_0, v000002b2765aff10_0;
+E_000002b27659cd10 .event/or E_000002b27659cd10/0, E_000002b27659cd10/1;
+S_000002b276563200 .scope autofunction.vec2.u32, "signed_mod" "signed_mod" 5 21, 5 21 0, S_000002b276563070;
+ .timescale 0 0;
+v000002b2765afab0_0 .var/2s "modulus", 31 0;
+; Variable signed_mod is bool return value of scope S_000002b276563200
+v000002b2765af010_0 .var/2s "tmp", 31 0;
+v000002b2765af8d0_0 .var/2s "value", 31 0;
+TD_tb_self_checking_rrns_mac_system_b.dut.checker_u.signed_mod ;
+    %load/vec4 v000002b2765af8d0_0;
+    %load/vec4 v000002b2765afab0_0;
+    %mod/s;
+    %cast2;
+    %store/vec4 v000002b2765af010_0, 0, 32;
+    %load/vec4 v000002b2765af010_0;
+    %cmpi/s 0, 0, 32;
+    %jmp/0xz  T_3.7, 5;
+    %load/vec4 v000002b2765af010_0;
+    %load/vec4 v000002b2765afab0_0;
+    %add;
+    %store/vec4 v000002b2765af010_0, 0, 32;
+T_3.7 ;
+    %load/vec4 v000002b2765af010_0;
+    %ret/vec4 0, 0, 32;  Assign to signed_mod (store_vec4_to_lval)
+    %disable/flow S_000002b276563200;
+    %end;
+S_000002b276563390 .scope module, "residue_m29_mac" "rrns_channel_mac" 4 36, 6 1 0, S_000002b2765ad7a0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 72 "activations";
+    .port_info 1 /INPUT 72 "weights";
+    .port_info 2 /OUTPUT 6 "residue_sum";
+P_000002b276554d60 .param/l "IN_WIDTH" 0 6 3, +C4<00000000000000000000000000001000>;
+P_000002b276554d98 .param/l "MODULUS" 0 6 2, +C4<00000000000000000000000000011101>;
+P_000002b276554dd0 .param/l "OUT_WIDTH" 0 6 5, +C4<00000000000000000000000000000110>;
+P_000002b276554e08 .param/l "TAP_COUNT" 0 6 4, +C4<00000000000000000000000000001001>;
+v000002b2765b0370_0 .var/2s "a_residue", 31 0;
+v000002b2765af0b0 .array "activations", 8 0;
+v000002b2765af0b0_0 .net/s v000002b2765af0b0 0, 7 0, L_000002b276593710; 1 drivers
+v000002b2765af0b0_1 .net/s v000002b2765af0b0 1, 7 0, L_000002b276593d30; 1 drivers
+v000002b2765af0b0_2 .net/s v000002b2765af0b0 2, 7 0, L_000002b276593a90; 1 drivers
+v000002b2765af0b0_3 .net/s v000002b2765af0b0 3, 7 0, L_000002b2765934e0; 1 drivers
+v000002b2765af0b0_4 .net/s v000002b2765af0b0 4, 7 0, L_000002b276594040; 1 drivers
+v000002b2765af0b0_5 .net/s v000002b2765af0b0 5, 7 0, L_000002b276593be0; 1 drivers
+v000002b2765af0b0_6 .net/s v000002b2765af0b0 6, 7 0, L_000002b276593550; 1 drivers
+v000002b2765af0b0_7 .net/s v000002b2765af0b0 7, 7 0, L_000002b2765937f0; 1 drivers
+v000002b2765af0b0_8 .net/s v000002b2765af0b0 8, 7 0, L_000002b276593b00; 1 drivers
+v000002b2765b0870_0 .var/2s "residue_accum", 31 0;
+v000002b2765b0050_0 .var "residue_sum", 5 0;
+v000002b2765afdd0_0 .var/i "tap", 31 0;
+v000002b2765af1f0_0 .var/2s "w_residue", 31 0;
+v000002b2765b0730 .array "weights", 8 0;
+v000002b2765b0730_0 .net/s v000002b2765b0730 0, 7 0, L_000002b2765939b0; 1 drivers
+v000002b2765b0730_1 .net/s v000002b2765b0730 1, 7 0, L_000002b276593940; 1 drivers
+v000002b2765b0730_2 .net/s v000002b2765b0730 2, 7 0, L_000002b2765940b0; 1 drivers
+v000002b2765b0730_3 .net/s v000002b2765b0730 3, 7 0, L_000002b276593240; 1 drivers
+v000002b2765b0730_4 .net/s v000002b2765b0730 4, 7 0, L_000002b2765932b0; 1 drivers
+v000002b2765b0730_5 .net/s v000002b2765b0730 5, 7 0, L_000002b276593a20; 1 drivers
+v000002b2765b0730_6 .net/s v000002b2765b0730 6, 7 0, L_000002b276593e10; 1 drivers
+v000002b2765b0730_7 .net/s v000002b2765b0730 7, 7 0, L_000002b276593b70; 1 drivers
+v000002b2765b0730_8 .net/s v000002b2765b0730 8, 7 0, L_000002b276593cc0; 1 drivers
+E_000002b27659cd50/0 .event anyedge, v000002b2765af0b0_0, v000002b2765af0b0_1, v000002b2765af0b0_2, v000002b2765af0b0_3;
+E_000002b27659cd50/1 .event anyedge, v000002b2765af0b0_4, v000002b2765af0b0_5, v000002b2765af0b0_6, v000002b2765af0b0_7;
+E_000002b27659cd50/2 .event anyedge, v000002b2765af0b0_8, v000002b2765b0730_0, v000002b2765b0730_1, v000002b2765b0730_2;
+E_000002b27659cd50/3 .event anyedge, v000002b2765b0730_3, v000002b2765b0730_4, v000002b2765b0730_5, v000002b2765b0730_6;
+E_000002b27659cd50/4 .event anyedge, v000002b2765b0730_7, v000002b2765b0730_8, v000002b2765b0870_0, v000002b2765b0370_0;
+E_000002b27659cd50/5 .event anyedge, v000002b2765af1f0_0;
+E_000002b27659cd50 .event/or E_000002b27659cd50/0, E_000002b27659cd50/1, E_000002b27659cd50/2, E_000002b27659cd50/3, E_000002b27659cd50/4, E_000002b27659cd50/5;
+S_000002b276554e50 .scope autofunction.vec2.u32, "signed_mod" "signed_mod" 6 12, 6 12 0, S_000002b276563390;
+ .timescale 0 0;
+; Variable signed_mod is bool return value of scope S_000002b276554e50
+v000002b2765b0d70_0 .var/2s "tmp", 31 0;
+v000002b2765af3d0_0 .var/2s "value", 31 0;
+TD_tb_self_checking_rrns_mac_system_b.dut.residue_m29_mac.signed_mod ;
+    %load/vec4 v000002b2765af3d0_0;
+    %pushi/vec4 29, 0, 32;
+    %mod/s;
+    %cast2;
+    %store/vec4 v000002b2765b0d70_0, 0, 32;
+    %load/vec4 v000002b2765b0d70_0;
+    %cmpi/s 0, 0, 32;
+    %jmp/0xz  T_4.9, 5;
+    %load/vec4 v000002b2765b0d70_0;
+    %addi 29, 0, 32;
+    %store/vec4 v000002b2765b0d70_0, 0, 32;
+T_4.9 ;
+    %load/vec4 v000002b2765b0d70_0;
+    %ret/vec4 0, 0, 32;  Assign to signed_mod (store_vec4_to_lval)
+    %disable/flow S_000002b276554e50;
+    %end;
+S_000002b276554fe0 .scope module, "residue_m31_mac" "rrns_channel_mac" 4 47, 6 1 0, S_000002b2765ad7a0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 72 "activations";
+    .port_info 1 /INPUT 72 "weights";
+    .port_info 2 /OUTPUT 6 "residue_sum";
+P_000002b276549e30 .param/l "IN_WIDTH" 0 6 3, +C4<00000000000000000000000000001000>;
+P_000002b276549e68 .param/l "MODULUS" 0 6 2, +C4<00000000000000000000000000011111>;
+P_000002b276549ea0 .param/l "OUT_WIDTH" 0 6 5, +C4<00000000000000000000000000000110>;
+P_000002b276549ed8 .param/l "TAP_COUNT" 0 6 4, +C4<00000000000000000000000000001001>;
+v000002b2765afbf0_0 .var/2s "a_residue", 31 0;
+v000002b2765b0b90 .array "activations", 8 0;
+v000002b2765b0b90_0 .net/s v000002b2765b0b90 0, 7 0, L_000002b276593320; 1 drivers
+v000002b2765b0b90_1 .net/s v000002b2765b0b90 1, 7 0, L_000002b276593390; 1 drivers
+v000002b2765b0b90_2 .net/s v000002b2765b0b90 2, 7 0, L_000002b276593400; 1 drivers
+v000002b2765b0b90_3 .net/s v000002b2765b0b90 3, 7 0, L_000002b276593860; 1 drivers
+v000002b2765b0b90_4 .net/s v000002b2765b0b90 4, 7 0, L_000002b276593630; 1 drivers
+v000002b2765b0b90_5 .net/s v000002b2765b0b90 5, 7 0, L_000002b2765936a0; 1 drivers
+v000002b2765b0b90_6 .net/s v000002b2765b0b90 6, 7 0, L_000002b276593780; 1 drivers
+v000002b2765b0b90_7 .net/s v000002b2765b0b90 7, 7 0, L_000002b2765938d0; 1 drivers
+v000002b2765b0b90_8 .net/s v000002b2765b0b90 8, 7 0, L_000002b2767241d0; 1 drivers
+v000002b2765afc90_0 .var/2s "residue_accum", 31 0;
+v000002b2765afd30_0 .var "residue_sum", 5 0;
+v000002b2765afe70_0 .var/i "tap", 31 0;
+v000002b2765b0a50_0 .var/2s "w_residue", 31 0;
+v000002b2765b0230 .array "weights", 8 0;
+v000002b2765b0230_0 .net/s v000002b2765b0230 0, 7 0, L_000002b276724160; 1 drivers
+v000002b2765b0230_1 .net/s v000002b2765b0230 1, 7 0, L_000002b276724320; 1 drivers
+v000002b2765b0230_2 .net/s v000002b2765b0230 2, 7 0, L_000002b276724b70; 1 drivers
+v000002b2765b0230_3 .net/s v000002b2765b0230 3, 7 0, L_000002b2767242b0; 1 drivers
+v000002b2765b0230_4 .net/s v000002b2765b0230 4, 7 0, L_000002b2767248d0; 1 drivers
+v000002b2765b0230_5 .net/s v000002b2765b0230 5, 7 0, L_000002b276724400; 1 drivers
+v000002b2765b0230_6 .net/s v000002b2765b0230 6, 7 0, L_000002b276724da0; 1 drivers
+v000002b2765b0230_7 .net/s v000002b2765b0230 7, 7 0, L_000002b276724a90; 1 drivers
+v000002b2765b0230_8 .net/s v000002b2765b0230 8, 7 0, L_000002b276724b00; 1 drivers
+E_000002b27659cd90/0 .event anyedge, v000002b2765b0b90_0, v000002b2765b0b90_1, v000002b2765b0b90_2, v000002b2765b0b90_3;
+E_000002b27659cd90/1 .event anyedge, v000002b2765b0b90_4, v000002b2765b0b90_5, v000002b2765b0b90_6, v000002b2765b0b90_7;
+E_000002b27659cd90/2 .event anyedge, v000002b2765b0b90_8, v000002b2765b0230_0, v000002b2765b0230_1, v000002b2765b0230_2;
+E_000002b27659cd90/3 .event anyedge, v000002b2765b0230_3, v000002b2765b0230_4, v000002b2765b0230_5, v000002b2765b0230_6;
+E_000002b27659cd90/4 .event anyedge, v000002b2765b0230_7, v000002b2765b0230_8, v000002b2765afc90_0, v000002b2765afbf0_0;
+E_000002b27659cd90/5 .event anyedge, v000002b2765b0a50_0;
+E_000002b27659cd90 .event/or E_000002b27659cd90/0, E_000002b27659cd90/1, E_000002b27659cd90/2, E_000002b27659cd90/3, E_000002b27659cd90/4, E_000002b27659cd90/5;
+S_000002b276549f20 .scope autofunction.vec2.u32, "signed_mod" "signed_mod" 6 12, 6 12 0, S_000002b276554fe0;
+ .timescale 0 0;
+; Variable signed_mod is bool return value of scope S_000002b276549f20
+v000002b2765b09b0_0 .var/2s "tmp", 31 0;
+v000002b2765af290_0 .var/2s "value", 31 0;
+TD_tb_self_checking_rrns_mac_system_b.dut.residue_m31_mac.signed_mod ;
+    %load/vec4 v000002b2765af290_0;
+    %pushi/vec4 31, 0, 32;
+    %mod/s;
+    %cast2;
+    %store/vec4 v000002b2765b09b0_0, 0, 32;
+    %load/vec4 v000002b2765b09b0_0;
+    %cmpi/s 0, 0, 32;
+    %jmp/0xz  T_5.11, 5;
+    %load/vec4 v000002b2765b09b0_0;
+    %addi 31, 0, 32;
+    %store/vec4 v000002b2765b09b0_0, 0, 32;
+T_5.11 ;
+    %load/vec4 v000002b2765b09b0_0;
+    %ret/vec4 0, 0, 32;  Assign to signed_mod (store_vec4_to_lval)
+    %disable/flow S_000002b276549f20;
+    %end;
+S_000002b27654a0b0 .scope module, "residue_m37_mac" "rrns_channel_mac" 4 58, 6 1 0, S_000002b2765ad7a0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 72 "activations";
+    .port_info 1 /INPUT 72 "weights";
+    .port_info 2 /OUTPUT 6 "residue_sum";
+P_000002b27650ab10 .param/l "IN_WIDTH" 0 6 3, +C4<00000000000000000000000000001000>;
+P_000002b27650ab48 .param/l "MODULUS" 0 6 2, +C4<00000000000000000000000000100101>;
+P_000002b27650ab80 .param/l "OUT_WIDTH" 0 6 5, +C4<00000000000000000000000000000110>;
+P_000002b27650abb8 .param/l "TAP_COUNT" 0 6 4, +C4<00000000000000000000000000001001>;
+v000002b2765b0410_0 .var/2s "a_residue", 31 0;
+v000002b2765b0cd0 .array "activations", 8 0;
+v000002b2765b0cd0_0 .net/s v000002b2765b0cd0 0, 7 0, L_000002b2767245c0; 1 drivers
+v000002b2765b0cd0_1 .net/s v000002b2765b0cd0 1, 7 0, L_000002b2767246a0; 1 drivers
+v000002b2765b0cd0_2 .net/s v000002b2765b0cd0 2, 7 0, L_000002b276724cc0; 1 drivers
+v000002b2765b0cd0_3 .net/s v000002b2765b0cd0 3, 7 0, L_000002b276724630; 1 drivers
+v000002b2765b0cd0_4 .net/s v000002b2765b0cd0 4, 7 0, L_000002b276724940; 1 drivers
+v000002b2765b0cd0_5 .net/s v000002b2765b0cd0 5, 7 0, L_000002b276724470; 1 drivers
+v000002b2765b0cd0_6 .net/s v000002b2765b0cd0 6, 7 0, L_000002b276724710; 1 drivers
+v000002b2765b0cd0_7 .net/s v000002b2765b0cd0 7, 7 0, L_000002b276724780; 1 drivers
+v000002b2765b0cd0_8 .net/s v000002b2765b0cd0 8, 7 0, L_000002b2767249b0; 1 drivers
+v000002b2765b0e10_0 .var/2s "residue_accum", 31 0;
+v000002b27671ba70_0 .var "residue_sum", 5 0;
+v000002b27671c6f0_0 .var/i "tap", 31 0;
+v000002b27671cdd0_0 .var/2s "w_residue", 31 0;
+v000002b27671c510 .array "weights", 8 0;
+v000002b27671c510_0 .net/s v000002b27671c510 0, 7 0, L_000002b276724240; 1 drivers
+v000002b27671c510_1 .net/s v000002b27671c510 1, 7 0, L_000002b2767247f0; 1 drivers
+v000002b27671c510_2 .net/s v000002b27671c510 2, 7 0, L_000002b276724be0; 1 drivers
+v000002b27671c510_3 .net/s v000002b27671c510 3, 7 0, L_000002b2767244e0; 1 drivers
+v000002b27671c510_4 .net/s v000002b27671c510 4, 7 0, L_000002b276724f60; 1 drivers
+v000002b27671c510_5 .net/s v000002b27671c510 5, 7 0, L_000002b276724860; 1 drivers
+v000002b27671c510_6 .net/s v000002b27671c510 6, 7 0, L_000002b276724c50; 1 drivers
+v000002b27671c510_7 .net/s v000002b27671c510 7, 7 0, L_000002b276724550; 1 drivers
+v000002b27671c510_8 .net/s v000002b27671c510 8, 7 0, L_000002b276724d30; 1 drivers
+E_000002b27659cb10/0 .event anyedge, v000002b2765b0cd0_0, v000002b2765b0cd0_1, v000002b2765b0cd0_2, v000002b2765b0cd0_3;
+E_000002b27659cb10/1 .event anyedge, v000002b2765b0cd0_4, v000002b2765b0cd0_5, v000002b2765b0cd0_6, v000002b2765b0cd0_7;
+E_000002b27659cb10/2 .event anyedge, v000002b2765b0cd0_8, v000002b27671c510_0, v000002b27671c510_1, v000002b27671c510_2;
+E_000002b27659cb10/3 .event anyedge, v000002b27671c510_3, v000002b27671c510_4, v000002b27671c510_5, v000002b27671c510_6;
+E_000002b27659cb10/4 .event anyedge, v000002b27671c510_7, v000002b27671c510_8, v000002b2765b0e10_0, v000002b2765b0410_0;
+E_000002b27659cb10/5 .event anyedge, v000002b27671cdd0_0;
+E_000002b27659cb10 .event/or E_000002b27659cb10/0, E_000002b27659cb10/1, E_000002b27659cb10/2, E_000002b27659cb10/3, E_000002b27659cb10/4, E_000002b27659cb10/5;
+S_000002b27650ac00 .scope autofunction.vec2.u32, "signed_mod" "signed_mod" 6 12, 6 12 0, S_000002b27654a0b0;
+ .timescale 0 0;
+; Variable signed_mod is bool return value of scope S_000002b27650ac00
+v000002b2765b02d0_0 .var/2s "tmp", 31 0;
+v000002b2765b0c30_0 .var/2s "value", 31 0;
+TD_tb_self_checking_rrns_mac_system_b.dut.residue_m37_mac.signed_mod ;
+    %load/vec4 v000002b2765b0c30_0;
+    %pushi/vec4 37, 0, 32;
+    %mod/s;
+    %cast2;
+    %store/vec4 v000002b2765b02d0_0, 0, 32;
+    %load/vec4 v000002b2765b02d0_0;
+    %cmpi/s 0, 0, 32;
+    %jmp/0xz  T_6.13, 5;
+    %load/vec4 v000002b2765b02d0_0;
+    %addi 37, 0, 32;
+    %store/vec4 v000002b2765b02d0_0, 0, 32;
+T_6.13 ;
+    %load/vec4 v000002b2765b02d0_0;
+    %ret/vec4 0, 0, 32;  Assign to signed_mod (store_vec4_to_lval)
+    %disable/flow S_000002b27650ac00;
+    %end;
+S_000002b27650ad90 .scope module, "residue_m41_mac" "rrns_channel_mac" 4 69, 6 1 0, S_000002b2765ad7a0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 72 "activations";
+    .port_info 1 /INPUT 72 "weights";
+    .port_info 2 /OUTPUT 6 "residue_sum";
+P_000002b2765ae6b0 .param/l "IN_WIDTH" 0 6 3, +C4<00000000000000000000000000001000>;
+P_000002b2765ae6e8 .param/l "MODULUS" 0 6 2, +C4<00000000000000000000000000101001>;
+P_000002b2765ae720 .param/l "OUT_WIDTH" 0 6 5, +C4<00000000000000000000000000000110>;
+P_000002b2765ae758 .param/l "TAP_COUNT" 0 6 4, +C4<00000000000000000000000000001001>;
+v000002b27671c290_0 .var/2s "a_residue", 31 0;
+v000002b27671b4d0 .array "activations", 8 0;
+v000002b27671b4d0_0 .net/s v000002b27671b4d0 0, 7 0, L_000002b276724a20; 1 drivers
+v000002b27671b4d0_1 .net/s v000002b27671b4d0 1, 7 0, L_000002b276724e10; 1 drivers
+v000002b27671b4d0_2 .net/s v000002b27671b4d0 2, 7 0, L_000002b276724e80; 1 drivers
+v000002b27671b4d0_3 .net/s v000002b27671b4d0 3, 7 0, L_000002b276725040; 1 drivers
+v000002b27671b4d0_4 .net/s v000002b27671b4d0 4, 7 0, L_000002b276724fd0; 1 drivers
+v000002b27671b4d0_5 .net/s v000002b27671b4d0 5, 7 0, L_000002b276724ef0; 1 drivers
+v000002b27671b4d0_6 .net/s v000002b27671b4d0 6, 7 0, L_000002b276724390; 1 drivers
+v000002b27671b4d0_7 .net/s v000002b27671b4d0 7, 7 0, L_000002b2767256b0; 1 drivers
+v000002b27671b4d0_8 .net/s v000002b27671b4d0 8, 7 0, L_000002b2767259c0; 1 drivers
+v000002b27671c010_0 .var/2s "residue_accum", 31 0;
+v000002b27671ce70_0 .var "residue_sum", 5 0;
+v000002b27671bbb0_0 .var/i "tap", 31 0;
+v000002b27671b570_0 .var/2s "w_residue", 31 0;
+v000002b27671c5b0 .array "weights", 8 0;
+v000002b27671c5b0_0 .net/s v000002b27671c5b0 0, 7 0, L_000002b276725720; 1 drivers
+v000002b27671c5b0_1 .net/s v000002b27671c5b0 1, 7 0, L_000002b276725c60; 1 drivers
+v000002b27671c5b0_2 .net/s v000002b27671c5b0 2, 7 0, L_000002b276725790; 1 drivers
+v000002b27671c5b0_3 .net/s v000002b27671c5b0 3, 7 0, L_000002b276725480; 1 drivers
+v000002b27671c5b0_4 .net/s v000002b27671c5b0 4, 7 0, L_000002b276725800; 1 drivers
+v000002b27671c5b0_5 .net/s v000002b27671c5b0 5, 7 0, L_000002b276725170; 1 drivers
+v000002b27671c5b0_6 .net/s v000002b27671c5b0 6, 7 0, L_000002b276725330; 1 drivers
+v000002b27671c5b0_7 .net/s v000002b27671c5b0 7, 7 0, L_000002b276725b10; 1 drivers
+v000002b27671c5b0_8 .net/s v000002b27671c5b0 8, 7 0, L_000002b276725a30; 1 drivers
+E_000002b27659cbd0/0 .event anyedge, v000002b27671b4d0_0, v000002b27671b4d0_1, v000002b27671b4d0_2, v000002b27671b4d0_3;
+E_000002b27659cbd0/1 .event anyedge, v000002b27671b4d0_4, v000002b27671b4d0_5, v000002b27671b4d0_6, v000002b27671b4d0_7;
+E_000002b27659cbd0/2 .event anyedge, v000002b27671b4d0_8, v000002b27671c5b0_0, v000002b27671c5b0_1, v000002b27671c5b0_2;
+E_000002b27659cbd0/3 .event anyedge, v000002b27671c5b0_3, v000002b27671c5b0_4, v000002b27671c5b0_5, v000002b27671c5b0_6;
+E_000002b27659cbd0/4 .event anyedge, v000002b27671c5b0_7, v000002b27671c5b0_8, v000002b27671c010_0, v000002b27671c290_0;
+E_000002b27659cbd0/5 .event anyedge, v000002b27671b570_0;
+E_000002b27659cbd0 .event/or E_000002b27659cbd0/0, E_000002b27659cbd0/1, E_000002b27659cbd0/2, E_000002b27659cbd0/3, E_000002b27659cbd0/4, E_000002b27659cbd0/5;
+S_000002b27671d2b0 .scope autofunction.vec2.u32, "signed_mod" "signed_mod" 6 12, 6 12 0, S_000002b27650ad90;
+ .timescale 0 0;
+; Variable signed_mod is bool return value of scope S_000002b27671d2b0
+v000002b27671b430_0 .var/2s "tmp", 31 0;
+v000002b27671c470_0 .var/2s "value", 31 0;
+TD_tb_self_checking_rrns_mac_system_b.dut.residue_m41_mac.signed_mod ;
+    %load/vec4 v000002b27671c470_0;
+    %pushi/vec4 41, 0, 32;
+    %mod/s;
+    %cast2;
+    %store/vec4 v000002b27671b430_0, 0, 32;
+    %load/vec4 v000002b27671b430_0;
+    %cmpi/s 0, 0, 32;
+    %jmp/0xz  T_7.15, 5;
+    %load/vec4 v000002b27671b430_0;
+    %addi 41, 0, 32;
+    %store/vec4 v000002b27671b430_0, 0, 32;
+T_7.15 ;
+    %load/vec4 v000002b27671b430_0;
+    %ret/vec4 0, 0, 32;  Assign to signed_mod (store_vec4_to_lval)
+    %disable/flow S_000002b27671d2b0;
+    %end;
+S_000002b27671df30 .scope autotask, "load_multi_tap_case" "load_multi_tap_case" 3 83, 3 83 0, S_000002b2765aed90;
+ .timescale -9 -12;
+TD_tb_self_checking_rrns_mac_system_b.load_multi_tap_case ;
+    %alloc S_000002b2765a8520;
+    %fork TD_tb_self_checking_rrns_mac_system_b.clear_inputs, S_000002b2765a8520;
+    %join;
+    %free S_000002b2765a8520;
+    %pushi/vec4 2, 0, 8;
+    %ix/load 4, 0, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v000002b27671c650, 4, 0;
+    %pushi/vec4 252, 0, 8;
+    %ix/load 4, 0, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v000002b276721400, 4, 0;
+    %pushi/vec4 6, 0, 8;
+    %ix/load 4, 1, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v000002b27671c650, 4, 0;
+    %pushi/vec4 7, 0, 8;
+    %ix/load 4, 1, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v000002b276721400, 4, 0;
+    %pushi/vec4 1, 0, 8;
+    %ix/load 4, 2, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v000002b27671c650, 4, 0;
+    %pushi/vec4 5, 0, 8;
+    %ix/load 4, 2, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v000002b276721400, 4, 0;
+    %pushi/vec4 250, 0, 8;
+    %ix/load 4, 3, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v000002b27671c650, 4, 0;
+    %pushi/vec4 249, 0, 8;
+    %ix/load 4, 3, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v000002b276721400, 4, 0;
+    %pushi/vec4 251, 0, 8;
+    %ix/load 4, 4, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v000002b27671c650, 4, 0;
+    %pushi/vec4 250, 0, 8;
+    %ix/load 4, 4, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v000002b276721400, 4, 0;
+    %pushi/vec4 8, 0, 8;
+    %ix/load 4, 5, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v000002b27671c650, 4, 0;
+    %pushi/vec4 2, 0, 8;
+    %ix/load 4, 5, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v000002b276721400, 4, 0;
+    %pushi/vec4 5, 0, 8;
+    %ix/load 4, 6, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v000002b27671c650, 4, 0;
+    %pushi/vec4 2, 0, 8;
+    %ix/load 4, 6, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v000002b276721400, 4, 0;
+    %pushi/vec4 253, 0, 8;
+    %ix/load 4, 7, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v000002b27671c650, 4, 0;
+    %pushi/vec4 3, 0, 8;
+    %ix/load 4, 7, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v000002b276721400, 4, 0;
+    %pushi/vec4 2, 0, 8;
+    %ix/load 4, 8, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v000002b27671c650, 4, 0;
+    %pushi/vec4 7, 0, 8;
+    %ix/load 4, 8, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v000002b276721400, 4, 0;
+    %end;
+S_000002b27671d120 .scope autotask, "load_single_product_case" "load_single_product_case" 3 75, 3 75 0, S_000002b2765aed90;
+ .timescale -9 -12;
+TD_tb_self_checking_rrns_mac_system_b.load_single_product_case ;
+    %alloc S_000002b2765a8520;
+    %fork TD_tb_self_checking_rrns_mac_system_b.clear_inputs, S_000002b2765a8520;
+    %join;
+    %free S_000002b2765a8520;
+    %pushi/vec4 246, 0, 8;
+    %ix/load 4, 0, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v000002b27671c650, 4, 0;
+    %pushi/vec4 20, 0, 8;
+    %ix/load 4, 0, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v000002b276721400, 4, 0;
+    %end;
+    .scope S_000002b276563390;
+T_10 ;
+    %wait E_000002b27659cd50;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v000002b2765b0870_0, 0, 32;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v000002b2765afdd0_0, 0, 32;
+T_10.0 ; Top of for-loop
+    %load/vec4 v000002b2765afdd0_0;
+    %cmpi/s 9, 0, 32;
+	  %jmp/0xz T_10.1, 5;
+    %alloc S_000002b276554e50;
+    %ix/getv/s 4, v000002b2765afdd0_0;
+    %load/vec4a v000002b2765af0b0, 4;
+    %pad/s 32;
+    %cast2;
+    %store/vec4 v000002b2765af3d0_0, 0, 32;
+    %callf/vec4 TD_tb_self_checking_rrns_mac_system_b.dut.residue_m29_mac.signed_mod, S_000002b276554e50;
+    %free S_000002b276554e50;
+    %store/vec4 v000002b2765b0370_0, 0, 32;
+    %alloc S_000002b276554e50;
+    %ix/getv/s 4, v000002b2765afdd0_0;
+    %load/vec4a v000002b2765b0730, 4;
+    %pad/s 32;
+    %cast2;
+    %store/vec4 v000002b2765af3d0_0, 0, 32;
+    %callf/vec4 TD_tb_self_checking_rrns_mac_system_b.dut.residue_m29_mac.signed_mod, S_000002b276554e50;
+    %free S_000002b276554e50;
+    %store/vec4 v000002b2765af1f0_0, 0, 32;
+    %alloc S_000002b276554e50;
+    %load/vec4 v000002b2765b0870_0;
+    %load/vec4 v000002b2765b0370_0;
+    %load/vec4 v000002b2765af1f0_0;
+    %mul;
+    %add;
+    %store/vec4 v000002b2765af3d0_0, 0, 32;
+    %callf/vec4 TD_tb_self_checking_rrns_mac_system_b.dut.residue_m29_mac.signed_mod, S_000002b276554e50;
+    %free S_000002b276554e50;
+    %store/vec4 v000002b2765b0870_0, 0, 32;
+T_10.2 ; for-loop step statement
+    %load/vec4 v000002b2765afdd0_0;
+    %addi 1, 0, 32;
+    %store/vec4 v000002b2765afdd0_0, 0, 32;
+    %jmp T_10.0;
+T_10.1 ; for-loop exit label
+    %load/vec4 v000002b2765b0870_0;
+    %parti/s 6, 0, 2;
+    %store/vec4 v000002b2765b0050_0, 0, 6;
+    %jmp T_10;
+    .thread T_10, $push;
+    .scope S_000002b276554fe0;
+T_11 ;
+    %wait E_000002b27659cd90;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v000002b2765afc90_0, 0, 32;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v000002b2765afe70_0, 0, 32;
+T_11.0 ; Top of for-loop
+    %load/vec4 v000002b2765afe70_0;
+    %cmpi/s 9, 0, 32;
+	  %jmp/0xz T_11.1, 5;
+    %alloc S_000002b276549f20;
+    %ix/getv/s 4, v000002b2765afe70_0;
+    %load/vec4a v000002b2765b0b90, 4;
+    %pad/s 32;
+    %cast2;
+    %store/vec4 v000002b2765af290_0, 0, 32;
+    %callf/vec4 TD_tb_self_checking_rrns_mac_system_b.dut.residue_m31_mac.signed_mod, S_000002b276549f20;
+    %free S_000002b276549f20;
+    %store/vec4 v000002b2765afbf0_0, 0, 32;
+    %alloc S_000002b276549f20;
+    %ix/getv/s 4, v000002b2765afe70_0;
+    %load/vec4a v000002b2765b0230, 4;
+    %pad/s 32;
+    %cast2;
+    %store/vec4 v000002b2765af290_0, 0, 32;
+    %callf/vec4 TD_tb_self_checking_rrns_mac_system_b.dut.residue_m31_mac.signed_mod, S_000002b276549f20;
+    %free S_000002b276549f20;
+    %store/vec4 v000002b2765b0a50_0, 0, 32;
+    %alloc S_000002b276549f20;
+    %load/vec4 v000002b2765afc90_0;
+    %load/vec4 v000002b2765afbf0_0;
+    %load/vec4 v000002b2765b0a50_0;
+    %mul;
+    %add;
+    %store/vec4 v000002b2765af290_0, 0, 32;
+    %callf/vec4 TD_tb_self_checking_rrns_mac_system_b.dut.residue_m31_mac.signed_mod, S_000002b276549f20;
+    %free S_000002b276549f20;
+    %store/vec4 v000002b2765afc90_0, 0, 32;
+T_11.2 ; for-loop step statement
+    %load/vec4 v000002b2765afe70_0;
+    %addi 1, 0, 32;
+    %store/vec4 v000002b2765afe70_0, 0, 32;
+    %jmp T_11.0;
+T_11.1 ; for-loop exit label
+    %load/vec4 v000002b2765afc90_0;
+    %parti/s 6, 0, 2;
+    %store/vec4 v000002b2765afd30_0, 0, 6;
+    %jmp T_11;
+    .thread T_11, $push;
+    .scope S_000002b27654a0b0;
+T_12 ;
+    %wait E_000002b27659cb10;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v000002b2765b0e10_0, 0, 32;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v000002b27671c6f0_0, 0, 32;
+T_12.0 ; Top of for-loop
+    %load/vec4 v000002b27671c6f0_0;
+    %cmpi/s 9, 0, 32;
+	  %jmp/0xz T_12.1, 5;
+    %alloc S_000002b27650ac00;
+    %ix/getv/s 4, v000002b27671c6f0_0;
+    %load/vec4a v000002b2765b0cd0, 4;
+    %pad/s 32;
+    %cast2;
+    %store/vec4 v000002b2765b0c30_0, 0, 32;
+    %callf/vec4 TD_tb_self_checking_rrns_mac_system_b.dut.residue_m37_mac.signed_mod, S_000002b27650ac00;
+    %free S_000002b27650ac00;
+    %store/vec4 v000002b2765b0410_0, 0, 32;
+    %alloc S_000002b27650ac00;
+    %ix/getv/s 4, v000002b27671c6f0_0;
+    %load/vec4a v000002b27671c510, 4;
+    %pad/s 32;
+    %cast2;
+    %store/vec4 v000002b2765b0c30_0, 0, 32;
+    %callf/vec4 TD_tb_self_checking_rrns_mac_system_b.dut.residue_m37_mac.signed_mod, S_000002b27650ac00;
+    %free S_000002b27650ac00;
+    %store/vec4 v000002b27671cdd0_0, 0, 32;
+    %alloc S_000002b27650ac00;
+    %load/vec4 v000002b2765b0e10_0;
+    %load/vec4 v000002b2765b0410_0;
+    %load/vec4 v000002b27671cdd0_0;
+    %mul;
+    %add;
+    %store/vec4 v000002b2765b0c30_0, 0, 32;
+    %callf/vec4 TD_tb_self_checking_rrns_mac_system_b.dut.residue_m37_mac.signed_mod, S_000002b27650ac00;
+    %free S_000002b27650ac00;
+    %store/vec4 v000002b2765b0e10_0, 0, 32;
+T_12.2 ; for-loop step statement
+    %load/vec4 v000002b27671c6f0_0;
+    %addi 1, 0, 32;
+    %store/vec4 v000002b27671c6f0_0, 0, 32;
+    %jmp T_12.0;
+T_12.1 ; for-loop exit label
+    %load/vec4 v000002b2765b0e10_0;
+    %parti/s 6, 0, 2;
+    %store/vec4 v000002b27671ba70_0, 0, 6;
+    %jmp T_12;
+    .thread T_12, $push;
+    .scope S_000002b27650ad90;
+T_13 ;
+    %wait E_000002b27659cbd0;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v000002b27671c010_0, 0, 32;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v000002b27671bbb0_0, 0, 32;
+T_13.0 ; Top of for-loop
+    %load/vec4 v000002b27671bbb0_0;
+    %cmpi/s 9, 0, 32;
+	  %jmp/0xz T_13.1, 5;
+    %alloc S_000002b27671d2b0;
+    %ix/getv/s 4, v000002b27671bbb0_0;
+    %load/vec4a v000002b27671b4d0, 4;
+    %pad/s 32;
+    %cast2;
+    %store/vec4 v000002b27671c470_0, 0, 32;
+    %callf/vec4 TD_tb_self_checking_rrns_mac_system_b.dut.residue_m41_mac.signed_mod, S_000002b27671d2b0;
+    %free S_000002b27671d2b0;
+    %store/vec4 v000002b27671c290_0, 0, 32;
+    %alloc S_000002b27671d2b0;
+    %ix/getv/s 4, v000002b27671bbb0_0;
+    %load/vec4a v000002b27671c5b0, 4;
+    %pad/s 32;
+    %cast2;
+    %store/vec4 v000002b27671c470_0, 0, 32;
+    %callf/vec4 TD_tb_self_checking_rrns_mac_system_b.dut.residue_m41_mac.signed_mod, S_000002b27671d2b0;
+    %free S_000002b27671d2b0;
+    %store/vec4 v000002b27671b570_0, 0, 32;
+    %alloc S_000002b27671d2b0;
+    %load/vec4 v000002b27671c010_0;
+    %load/vec4 v000002b27671c290_0;
+    %load/vec4 v000002b27671b570_0;
+    %mul;
+    %add;
+    %store/vec4 v000002b27671c470_0, 0, 32;
+    %callf/vec4 TD_tb_self_checking_rrns_mac_system_b.dut.residue_m41_mac.signed_mod, S_000002b27671d2b0;
+    %free S_000002b27671d2b0;
+    %store/vec4 v000002b27671c010_0, 0, 32;
+T_13.2 ; for-loop step statement
+    %load/vec4 v000002b27671bbb0_0;
+    %addi 1, 0, 32;
+    %store/vec4 v000002b27671bbb0_0, 0, 32;
+    %jmp T_13.0;
+T_13.1 ; for-loop exit label
+    %load/vec4 v000002b27671c010_0;
+    %parti/s 6, 0, 2;
+    %store/vec4 v000002b27671ce70_0, 0, 6;
+    %jmp T_13;
+    .thread T_13, $push;
+    .scope S_000002b276563070;
+T_14 ;
+    %wait E_000002b27659cd10;
+    %load/vec4 v000002b2765af330_0;
+    %pad/u 32;
+    %muli 22940, 0, 32;
+    %load/vec4 v000002b2765b0550_0;
+    %pad/u 32;
+    %muli 19314, 0, 32;
+    %add;
+    %load/vec4 v000002b2765b0910_0;
+    %pad/u 32;
+    %muli 24273, 0, 32;
+    %add;
+    %pushi/vec4 33263, 0, 32;
+    %mod;
+    %cast2;
+    %store/vec4 v000002b2765af150_0, 0, 32;
+    %load/vec4 v000002b2765af150_0;
+    %cmpi/s 16631, 0, 32;
+    %flag_or 5, 4; GT is !LE
+    %flag_inv 5;
+    %jmp/0xz  T_14.0, 5;
+    %load/vec4 v000002b2765af150_0;
+    %subi 33263, 0, 32;
+    %store/vec4 v000002b2765afa10_0, 0, 32;
+    %jmp T_14.1;
+T_14.0 ;
+    %load/vec4 v000002b2765af150_0;
+    %store/vec4 v000002b2765afa10_0, 0, 32;
+T_14.1 ;
+    %alloc S_000002b276563200;
+    %load/vec4 v000002b2765afa10_0;
+    %pushi/vec4 41, 0, 32;
+    %store/vec4 v000002b2765afab0_0, 0, 32;
+    %store/vec4 v000002b2765af8d0_0, 0, 32;
+    %callf/vec4 TD_tb_self_checking_rrns_mac_system_b.dut.checker_u.signed_mod, S_000002b276563200;
+    %free S_000002b276563200;
+    %store/vec4 v000002b2765af470_0, 0, 32;
+    %alloc S_000002b276563200;
+    %pushi/vec4 0, 0, 1;
+    %load/vec4 v000002b2765af510_0;
+    %concat/vec4; draw_concat_vec4
+    %pad/s 32;
+    %load/vec4 v000002b2765af470_0;
+    %sub;
+    %cast2;
+    %pushi/vec4 41, 0, 32;
+    %store/vec4 v000002b2765afab0_0, 0, 32;
+    %store/vec4 v000002b2765af8d0_0, 0, 32;
+    %callf/vec4 TD_tb_self_checking_rrns_mac_system_b.dut.checker_u.signed_mod, S_000002b276563200;
+    %free S_000002b276563200;
+    %store/vec4 v000002b2765aff10_0, 0, 32;
+    %load/vec4 v000002b2765af150_0;
+    %parti/s 16, 0, 2;
+    %store/vec4 v000002b2765b04b0_0, 0, 16;
+    %load/vec4 v000002b2765afa10_0;
+    %parti/s 16, 0, 2;
+    %store/vec4 v000002b2765afb50_0, 0, 16;
+    %load/vec4 v000002b2765af470_0;
+    %parti/s 6, 0, 2;
+    %store/vec4 v000002b2765affb0_0, 0, 6;
+    %load/vec4 v000002b2765aff10_0;
+    %parti/s 6, 0, 2;
+    %store/vec4 v000002b2765b0190_0, 0, 6;
+    %load/vec4 v000002b2765aff10_0;
+    %pushi/vec4 0, 0, 32;
+    %cmp/e;
+    %flag_get/vec4 4;
+    %store/vec4 v000002b2765af970_0, 0, 1;
+    %jmp T_14;
+    .thread T_14, $push;
+    .scope S_000002b2765ad7a0;
+T_15 ;
+    %wait E_000002b27659ce90;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v000002b27671b9d0_0, 0, 32;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v000002b27671c3d0_0, 0, 32;
+T_15.0 ; Top of for-loop
+    %load/vec4 v000002b27671c3d0_0;
+    %cmpi/s 9, 0, 32;
+	  %jmp/0xz T_15.1, 5;
+    ; show_stmt_assign_vector: Get l-value for compressed += operand
+    %load/vec4 v000002b27671b9d0_0;
+    %ix/getv/s 4, v000002b27671c3d0_0;
+    %load/vec4a v000002b27671b610, 4;
+    %pad/s 32;
+    %ix/getv/s 4, v000002b27671c3d0_0;
+    %load/vec4a v000002b27671bc50, 4;
+    %pad/s 32;
+    %mul;
+    %cast2;
+    %add;
+    %cast2;
+    %store/vec4 v000002b27671b9d0_0, 0, 32;
+T_15.2 ; for-loop step statement
+    %load/vec4 v000002b27671c3d0_0;
+    %addi 1, 0, 32;
+    %store/vec4 v000002b27671c3d0_0, 0, 32;
+    %jmp T_15.0;
+T_15.1 ; for-loop exit label
+    %load/vec4 v000002b27671b9d0_0;
+    %parti/s 16, 0, 2;
+    %store/vec4 v000002b27671cab0_0, 0, 16;
+    %jmp T_15;
+    .thread T_15, $push;
+    .scope S_000002b2765ad7a0;
+T_16 ;
+    %wait E_000002b27659ce10;
+    %load/vec4 v000002b27671b7f0_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_16.0, 8;
+    %load/vec4 v000002b27671bb10_0;
+    %store/vec4 v000002b27671b750_0, 0, 6;
+    %load/vec4 v000002b27671c0b0_0;
+    %store/vec4 v000002b27671b6b0_0, 0, 6;
+    %load/vec4 v000002b27671cfb0_0;
+    %store/vec4 v000002b27671cb50_0, 0, 6;
+    %load/vec4 v000002b27671be30_0;
+    %store/vec4 v000002b27671cbf0_0, 0, 6;
+    %jmp T_16.1;
+T_16.0 ;
+    %load/vec4 v000002b27671b390_0;
+    %store/vec4 v000002b27671b750_0, 0, 6;
+    %load/vec4 v000002b27671c330_0;
+    %store/vec4 v000002b27671b6b0_0, 0, 6;
+    %load/vec4 v000002b27671cc90_0;
+    %store/vec4 v000002b27671cb50_0, 0, 6;
+    %load/vec4 v000002b27671cf10_0;
+    %store/vec4 v000002b27671cbf0_0, 0, 6;
+T_16.1 ;
+    %jmp T_16;
+    .thread T_16, $push;
+    .scope S_000002b2765aed90;
+T_17 ;
+    %vpi_call/w 3 123 "$dumpfile", "verilog/waveforms/tb_self_checking_rrns_mac_system_b.vcd" {0 0 0};
+    %vpi_call/w 3 124 "$dumpvars", 32'sb00000000000000000000000000000000, S_000002b2765aed90 {0 0 0};
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v000002b276720500_0, 0, 32;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v000002b27671c970_0, 0, 32;
+    %vpi_call/w 3 129 "$display", "---- Case 1: clean single-product MAC ----" {0 0 0};
+    %alloc S_000002b27671d120;
+    %fork TD_tb_self_checking_rrns_mac_system_b.load_single_product_case, S_000002b27671d120;
+    %join;
+    %free S_000002b27671d120;
+    %delay 1000, 0;
+    %alloc S_000002b2765a8390;
+    %pushi/str "binary dot product";
+    %store/str v000002b2765af790_0;
+    %load/vec4 v000002b27671bd90_0;
+    %pad/s 32;
+    %cast2;
+    %store/vec4 v000002b2765af5b0_0, 0, 32;
+    %pushi/vec4 4294967096, 0, 32;
+    %store/vec4 v000002b2765b00f0_0, 0, 32;
+    %fork TD_tb_self_checking_rrns_mac_system_b.check_equal_int, S_000002b2765a8390;
+    %join;
+    %free S_000002b2765a8390;
+    %alloc S_000002b2765a8390;
+    %pushi/str "clean residue m29";
+    %store/str v000002b2765af790_0;
+    %load/vec4 v000002b27671b930_0;
+    %pad/u 32;
+    %cast2;
+    %store/vec4 v000002b2765af5b0_0, 0, 32;
+    %pushi/vec4 3, 0, 32;
+    %store/vec4 v000002b2765b00f0_0, 0, 32;
+    %fork TD_tb_self_checking_rrns_mac_system_b.check_equal_int, S_000002b2765a8390;
+    %join;
+    %free S_000002b2765a8390;
+    %alloc S_000002b2765a8390;
+    %pushi/str "clean residue m31";
+    %store/str v000002b2765af790_0;
+    %load/vec4 v000002b27671c150_0;
+    %pad/u 32;
+    %cast2;
+    %store/vec4 v000002b2765af5b0_0, 0, 32;
+    %pushi/vec4 17, 0, 32;
+    %store/vec4 v000002b2765b00f0_0, 0, 32;
+    %fork TD_tb_self_checking_rrns_mac_system_b.check_equal_int, S_000002b2765a8390;
+    %join;
+    %free S_000002b2765a8390;
+    %alloc S_000002b2765a8390;
+    %pushi/str "clean residue m37";
+    %store/str v000002b2765af790_0;
+    %load/vec4 v000002b27671c790_0;
+    %pad/u 32;
+    %cast2;
+    %store/vec4 v000002b2765af5b0_0, 0, 32;
+    %pushi/vec4 22, 0, 32;
+    %store/vec4 v000002b2765b00f0_0, 0, 32;
+    %fork TD_tb_self_checking_rrns_mac_system_b.check_equal_int, S_000002b2765a8390;
+    %join;
+    %free S_000002b2765a8390;
+    %alloc S_000002b2765a8390;
+    %pushi/str "clean residue m41";
+    %store/str v000002b2765af790_0;
+    %load/vec4 v000002b27671c830_0;
+    %pad/u 32;
+    %cast2;
+    %store/vec4 v000002b2765af5b0_0, 0, 32;
+    %pushi/vec4 5, 0, 32;
+    %store/vec4 v000002b2765b00f0_0, 0, 32;
+    %fork TD_tb_self_checking_rrns_mac_system_b.check_equal_int, S_000002b2765a8390;
+    %join;
+    %free S_000002b2765a8390;
+    %alloc S_000002b27659dbd0;
+    %pushi/str "clean checker valid";
+    %store/str v000002b2765af6f0_0;
+    %load/vec4 v000002b27671b890_0;
+    %store/vec4 v000002b2765b0690_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002b2765af650_0, 0, 1;
+    %fork TD_tb_self_checking_rrns_mac_system_b.check_equal_bit, S_000002b27659dbd0;
+    %join;
+    %free S_000002b27659dbd0;
+    %alloc S_000002b2765a8390;
+    %pushi/str "clean reconstructed signed";
+    %store/str v000002b2765af790_0;
+    %load/vec4 v000002b276720820_0;
+    %pad/s 32;
+    %cast2;
+    %store/vec4 v000002b2765af5b0_0, 0, 32;
+    %pushi/vec4 4294967096, 0, 32;
+    %store/vec4 v000002b2765b00f0_0, 0, 32;
+    %fork TD_tb_self_checking_rrns_mac_system_b.check_equal_int, S_000002b2765a8390;
+    %join;
+    %free S_000002b2765a8390;
+    %alloc S_000002b2765a8390;
+    %pushi/str "predicted redundant residue";
+    %store/str v000002b2765af790_0;
+    %load/vec4 v000002b276721900_0;
+    %pad/u 32;
+    %cast2;
+    %store/vec4 v000002b2765af5b0_0, 0, 32;
+    %pushi/vec4 5, 0, 32;
+    %store/vec4 v000002b2765b00f0_0, 0, 32;
+    %fork TD_tb_self_checking_rrns_mac_system_b.check_equal_int, S_000002b2765a8390;
+    %join;
+    %free S_000002b2765a8390;
+    %vpi_call/w 3 141 "$display", "---- Case 2: detected single informative-channel fault ----" {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002b2767219a0_0, 0, 1;
+    %pushi/vec4 4, 0, 6;
+    %store/vec4 v000002b27671ca10_0, 0, 6;
+    %load/vec4 v000002b27671c150_0;
+    %store/vec4 v000002b2767206e0_0, 0, 6;
+    %load/vec4 v000002b27671c790_0;
+    %store/vec4 v000002b276721680_0, 0, 6;
+    %load/vec4 v000002b27671c830_0;
+    %store/vec4 v000002b276721860_0, 0, 6;
+    %delay 1000, 0;
+    %alloc S_000002b27659dbd0;
+    %pushi/str "single informative fault detected";
+    %store/str v000002b2765af6f0_0;
+    %load/vec4 v000002b27671b890_0;
+    %store/vec4 v000002b2765b0690_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002b2765af650_0, 0, 1;
+    %fork TD_tb_self_checking_rrns_mac_system_b.check_equal_bit, S_000002b27659dbd0;
+    %join;
+    %free S_000002b27659dbd0;
+    %vpi_call/w 3 150 "$display", "---- Case 3: detected single redundant-channel fault ----" {0 0 0};
+    %load/vec4 v000002b27671b930_0;
+    %store/vec4 v000002b27671ca10_0, 0, 6;
+    %load/vec4 v000002b27671c150_0;
+    %store/vec4 v000002b2767206e0_0, 0, 6;
+    %load/vec4 v000002b27671c790_0;
+    %store/vec4 v000002b276721680_0, 0, 6;
+    %pushi/vec4 6, 0, 6;
+    %store/vec4 v000002b276721860_0, 0, 6;
+    %delay 1000, 0;
+    %alloc S_000002b27659dbd0;
+    %pushi/str "single redundant fault detected";
+    %store/str v000002b2765af6f0_0;
+    %load/vec4 v000002b27671b890_0;
+    %store/vec4 v000002b2765b0690_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002b2765af650_0, 0, 1;
+    %fork TD_tb_self_checking_rrns_mac_system_b.check_equal_bit, S_000002b27659dbd0;
+    %join;
+    %free S_000002b27659dbd0;
+    %alloc S_000002b2765a8390;
+    %pushi/str "redundant fault keeps reconstructed signed value";
+    %store/str v000002b2765af790_0;
+    %load/vec4 v000002b276720820_0;
+    %pad/s 32;
+    %cast2;
+    %store/vec4 v000002b2765af5b0_0, 0, 32;
+    %pushi/vec4 4294967096, 0, 32;
+    %store/vec4 v000002b2765b00f0_0, 0, 32;
+    %fork TD_tb_self_checking_rrns_mac_system_b.check_equal_int, S_000002b2765a8390;
+    %join;
+    %free S_000002b2765a8390;
+    %vpi_call/w 3 159 "$display", "---- Case 4: undetected two-informative fault example ----" {0 0 0};
+    %pushi/vec4 24, 0, 6;
+    %store/vec4 v000002b27671ca10_0, 0, 6;
+    %pushi/vec4 2, 0, 6;
+    %store/vec4 v000002b2767206e0_0, 0, 6;
+    %pushi/vec4 18, 0, 6;
+    %store/vec4 v000002b276721680_0, 0, 6;
+    %pushi/vec4 33, 0, 6;
+    %store/vec4 v000002b276721860_0, 0, 6;
+    %delay 1000, 0;
+    %alloc S_000002b27659dbd0;
+    %pushi/str "undetected two-channel fault remains checker-valid";
+    %store/str v000002b2765af6f0_0;
+    %load/vec4 v000002b27671b890_0;
+    %store/vec4 v000002b2765b0690_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002b2765af650_0, 0, 1;
+    %fork TD_tb_self_checking_rrns_mac_system_b.check_equal_bit, S_000002b27659dbd0;
+    %join;
+    %free S_000002b27659dbd0;
+    %alloc S_000002b2765a8390;
+    %pushi/str "undetected two-channel reconstructed value";
+    %store/str v000002b2765af790_0;
+    %load/vec4 v000002b276720820_0;
+    %pad/s 32;
+    %cast2;
+    %store/vec4 v000002b2765af5b0_0, 0, 32;
+    %pushi/vec4 4294962245, 0, 32;
+    %store/vec4 v000002b2765b00f0_0, 0, 32;
+    %fork TD_tb_self_checking_rrns_mac_system_b.check_equal_int, S_000002b2765a8390;
+    %join;
+    %free S_000002b2765a8390;
+    %vpi_call/w 3 168 "$display", "---- Case 5: clean multi-tap MAC window ----" {0 0 0};
+    %alloc S_000002b27671df30;
+    %fork TD_tb_self_checking_rrns_mac_system_b.load_multi_tap_case, S_000002b27671df30;
+    %join;
+    %free S_000002b27671df30;
+    %delay 1000, 0;
+    %alloc S_000002b2765a8390;
+    %pushi/str "multi-tap binary dot product";
+    %store/str v000002b2765af790_0;
+    %load/vec4 v000002b27671bd90_0;
+    %pad/s 32;
+    %cast2;
+    %store/vec4 v000002b2765af5b0_0, 0, 32;
+    %pushi/vec4 142, 0, 32;
+    %store/vec4 v000002b2765b00f0_0, 0, 32;
+    %fork TD_tb_self_checking_rrns_mac_system_b.check_equal_int, S_000002b2765a8390;
+    %join;
+    %free S_000002b2765a8390;
+    %alloc S_000002b2765a8390;
+    %pushi/str "multi-tap residue m29";
+    %store/str v000002b2765af790_0;
+    %load/vec4 v000002b27671b930_0;
+    %pad/u 32;
+    %cast2;
+    %store/vec4 v000002b2765af5b0_0, 0, 32;
+    %pushi/vec4 26, 0, 32;
+    %store/vec4 v000002b2765b00f0_0, 0, 32;
+    %fork TD_tb_self_checking_rrns_mac_system_b.check_equal_int, S_000002b2765a8390;
+    %join;
+    %free S_000002b2765a8390;
+    %alloc S_000002b2765a8390;
+    %pushi/str "multi-tap residue m31";
+    %store/str v000002b2765af790_0;
+    %load/vec4 v000002b27671c150_0;
+    %pad/u 32;
+    %cast2;
+    %store/vec4 v000002b2765af5b0_0, 0, 32;
+    %pushi/vec4 18, 0, 32;
+    %store/vec4 v000002b2765b00f0_0, 0, 32;
+    %fork TD_tb_self_checking_rrns_mac_system_b.check_equal_int, S_000002b2765a8390;
+    %join;
+    %free S_000002b2765a8390;
+    %alloc S_000002b2765a8390;
+    %pushi/str "multi-tap residue m37";
+    %store/str v000002b2765af790_0;
+    %load/vec4 v000002b27671c790_0;
+    %pad/u 32;
+    %cast2;
+    %store/vec4 v000002b2765af5b0_0, 0, 32;
+    %pushi/vec4 31, 0, 32;
+    %store/vec4 v000002b2765b00f0_0, 0, 32;
+    %fork TD_tb_self_checking_rrns_mac_system_b.check_equal_int, S_000002b2765a8390;
+    %join;
+    %free S_000002b2765a8390;
+    %alloc S_000002b2765a8390;
+    %pushi/str "multi-tap residue m41";
+    %store/str v000002b2765af790_0;
+    %load/vec4 v000002b27671c830_0;
+    %pad/u 32;
+    %cast2;
+    %store/vec4 v000002b2765af5b0_0, 0, 32;
+    %pushi/vec4 19, 0, 32;
+    %store/vec4 v000002b2765b00f0_0, 0, 32;
+    %fork TD_tb_self_checking_rrns_mac_system_b.check_equal_int, S_000002b2765a8390;
+    %join;
+    %free S_000002b2765a8390;
+    %alloc S_000002b27659dbd0;
+    %pushi/str "multi-tap checker valid";
+    %store/str v000002b2765af6f0_0;
+    %load/vec4 v000002b27671b890_0;
+    %store/vec4 v000002b2765b0690_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002b2765af650_0, 0, 1;
+    %fork TD_tb_self_checking_rrns_mac_system_b.check_equal_bit, S_000002b27659dbd0;
+    %join;
+    %free S_000002b27659dbd0;
+    %alloc S_000002b2765a8390;
+    %pushi/str "multi-tap reconstructed signed";
+    %store/str v000002b2765af790_0;
+    %load/vec4 v000002b276720820_0;
+    %pad/s 32;
+    %cast2;
+    %store/vec4 v000002b2765af5b0_0, 0, 32;
+    %pushi/vec4 142, 0, 32;
+    %store/vec4 v000002b2765b00f0_0, 0, 32;
+    %fork TD_tb_self_checking_rrns_mac_system_b.check_equal_int, S_000002b2765a8390;
+    %join;
+    %free S_000002b2765a8390;
+    %vpi_call/w 3 179 "$display", "---- Testbench summary ----" {0 0 0};
+    %vpi_call/w 3 180 "$display", "PASS COUNT = %0d", v000002b276720500_0 {0 0 0};
+    %vpi_call/w 3 181 "$display", "FAIL COUNT = %0d", v000002b27671c970_0 {0 0 0};
+    %load/vec4 v000002b27671c970_0;
+    %cmpi/ne 0, 0, 32;
+    %jmp/0xz  T_17.0, 4;
+    %vpi_call/w 3 184 "$fatal", 32'sb00000000000000000000000000000001, "RRNS MAC/checker System B testbench failed." {0 0 0};
+T_17.0 ;
+    %vpi_call/w 3 187 "$finish" {0 0 0};
+    %end;
+    .thread T_17;
+# The file index is used to find the file name in the following table.
+:file_names 7;
+    "N/A";
+    "<interactive>";
+    "-";
+    "C:/Users/PehAttaJoseph/Documents/GitHub/Edge-AI-Accelerator/rrns_mphil_experiments/verilog/tb/tb_self_checking_rrns_mac_system_b.sv";
+    "C:/Users/PehAttaJoseph/Documents/GitHub/Edge-AI-Accelerator/rrns_mphil_experiments/verilog/rtl/self_checking_rrns_mac_system_b.sv";
+    "C:/Users/PehAttaJoseph/Documents/GitHub/Edge-AI-Accelerator/rrns_mphil_experiments/verilog/rtl/rrns_checker_system_b.sv";
+    "C:/Users/PehAttaJoseph/Documents/GitHub/Edge-AI-Accelerator/rrns_mphil_experiments/verilog/rtl/rrns_channel_mac.sv";

@@ -1,0 +1,12 @@
+{
+  "seed": 7,
+  "systems": [
+    "RRNS(17, 19, 23)+(29)",
+    "RRNS(29, 31, 37)+(41)"
+  ],
+  "regimes": [
+    "random_interior",
+    "edge_band",
+    "full_balanced_range"
+  ]
+}

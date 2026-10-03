@@ -1,0 +1,30 @@
+VCD info: dumpfile verilog/waveforms/tb_self_checking_rrns_mac_system_b.vcd opened for output.
+---- Case 1: clean single-product MAC ----
+PASS: binary dot product observed=-200
+PASS: clean residue m29 observed=3
+PASS: clean residue m31 observed=17
+PASS: clean residue m37 observed=22
+PASS: clean residue m41 observed=5
+PASS: clean checker valid observed=1
+PASS: clean reconstructed signed observed=-200
+PASS: predicted redundant residue observed=5
+---- Case 2: detected single informative-channel fault ----
+PASS: single informative fault detected observed=0
+---- Case 3: detected single redundant-channel fault ----
+PASS: single redundant fault detected observed=0
+PASS: redundant fault keeps reconstructed signed value observed=-200
+---- Case 4: undetected two-informative fault example ----
+PASS: undetected two-channel fault remains checker-valid observed=1
+PASS: undetected two-channel reconstructed value observed=-5051
+---- Case 5: clean multi-tap MAC window ----
+PASS: multi-tap binary dot product observed=142
+PASS: multi-tap residue m29 observed=26
+PASS: multi-tap residue m31 observed=18
+PASS: multi-tap residue m37 observed=31
+PASS: multi-tap residue m41 observed=19
+PASS: multi-tap checker valid observed=1
+PASS: multi-tap reconstructed signed observed=142
+---- Testbench summary ----
+PASS COUNT = 20
+FAIL COUNT = 0
+C:/Users/PehAttaJoseph/Documents/GitHub/Edge-AI-Accelerator/rrns_mphil_experiments/verilog/tb/tb_self_checking_rrns_mac_system_b.sv:187: $finish called at 5000 (1ps)

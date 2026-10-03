@@ -1,0 +1,9 @@
+RRNS System,Validation Regime,Clean Codewords Tested,Accepted Clean Codewords,False Positives,False Positive Rate,Minimum Value,Maximum Value
+"System A: RRNS(17, 19, 23)+(29)",Random interior values,500,500,0,0.0,-2964,2970
+"System A: RRNS(17, 19, 23)+(29)",Signed-range edge values,11,11,0,0.0,-3714,3714
+"System A: RRNS(17, 19, 23)+(29)",Full balanced signed range,7429,7429,0,0.0,-3714,3714
+"System B: RRNS(29, 31, 37)+(41)",Random interior values,500,500,0,0.0,-13296,13301
+"System B: RRNS(29, 31, 37)+(41)",Signed-range edge values,11,11,0,0.0,-16631,16631
+"System B: RRNS(29, 31, 37)+(41)",Full balanced signed range,33263,33263,0,0.0,-16631,16631
+"System A: RRNS(17, 19, 23)+(29)",Overall,7940,7940,0,0.0,-3714,3714
+"System B: RRNS(29, 31, 37)+(41)",Overall,33774,33774,0,0.0,-16631,16631

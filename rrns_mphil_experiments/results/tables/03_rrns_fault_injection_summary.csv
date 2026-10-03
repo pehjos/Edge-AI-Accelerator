@@ -1,0 +1,13 @@
+RRNS System,Fault Pattern,Trials,Detected Faults,Detection Rate,Output-Changed Faults,Output-Change Rate,Harmful Undetected Faults,Harmful Undetected Rate,Mean Absolute Output Error,Maximum Absolute Output Error,Informative Bits,Redundant Bits,Total Bits,Redundancy Overhead Ratio
+"System A: RRNS(17, 19, 23)+(29)",Single informative-channel fault,240,240,1.0,240,1.0,0,0.0,2249.295833333333,5865.0,15,5,20,0.3333333333333333
+"System A: RRNS(17, 19, 23)+(29)",Single redundant-channel fault,240,240,1.0,0,0.0,0,0.0,0.0,0.0,15,5,20,0.3333333333333333
+"System A: RRNS(17, 19, 23)+(29)",Two informative-channel faults,240,230,0.9583333333333334,240,1.0,10,0.041666666666666664,2084.391666666667,6308.0,15,5,20,0.3333333333333333
+"System A: RRNS(17, 19, 23)+(29)",Informative + redundant fault,240,230,0.9583333333333334,240,1.0,10,0.041666666666666664,2290.9666666666667,5865.0,15,5,20,0.3333333333333333
+"System A: RRNS(17, 19, 23)+(29)",Two-channel mixed fault,240,235,0.9791666666666666,240,1.0,5,0.020833333333333332,2335.2166666666667,6118.0,15,5,20,0.3333333333333333
+"System B: RRNS(29, 31, 37)+(41)",Single informative-channel fault,240,240,1.0,240,1.0,0,0.0,11109.4625,28675.0,16,6,22,0.375
+"System B: RRNS(29, 31, 37)+(41)",Single redundant-channel fault,240,240,1.0,0,0.0,0,0.0,0.0,0.0,16,6,22,0.375
+"System B: RRNS(29, 31, 37)+(41)",Two informative-channel faults,240,229,0.9541666666666667,240,1.0,11,0.04583333333333333,9304.5375,26164.0,16,6,22,0.375
+"System B: RRNS(29, 31, 37)+(41)",Informative + redundant fault,240,236,0.9833333333333333,240,1.0,4,0.016666666666666666,10875.479166666666,27869.0,16,6,22,0.375
+"System B: RRNS(29, 31, 37)+(41)",Two-channel mixed fault,240,237,0.9875,240,1.0,3,0.0125,9476.7,26788.0,16,6,22,0.375
+"System A: RRNS(17, 19, 23)+(29)",Overall,1200,1175,0.9791666666666666,960,0.8,25,0.020833333333333332,1791.9741666666666,6308.0,15,5,20,0.3333333333333333
+"System B: RRNS(29, 31, 37)+(41)",Overall,1200,1182,0.985,960,0.8,18,0.015,8153.235833333333,28675.0,16,6,22,0.375

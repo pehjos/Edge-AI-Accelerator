@@ -1,0 +1,686 @@
+{
+  "reference_docx": "C:\\Users\\PehAttaJoseph\\Downloads\\MPhil_Thesis_Compilation_Working_Draft_v1.docx",
+  "sha256": "d36d2329aa28cf4567ac05314cb5cd13fdd685111d515cc058b97836f1db8f1a",
+  "pages": "74",
+  "words": "16275",
+  "paragraphs": "217",
+  "key_styles": {
+    "Normal": {
+      "name": "Normal",
+      "based_on": null,
+      "font_ascii": "Times New Roman",
+      "font_hansi": "Times New Roman",
+      "size_half_points": "24",
+      "color": null,
+      "align": "both",
+      "spacing_before": null,
+      "spacing_after": "120",
+      "line": "360",
+      "left_indent": null,
+      "first_line": "720",
+      "hanging": null,
+      "bold": false
+    },
+    "Title": {
+      "name": "Title",
+      "based_on": "Normal",
+      "font_ascii": null,
+      "font_hansi": null,
+      "size_half_points": "52",
+      "color": "17365D",
+      "align": null,
+      "spacing_before": null,
+      "spacing_after": "300",
+      "line": "240",
+      "left_indent": null,
+      "first_line": null,
+      "hanging": null,
+      "bold": false
+    },
+    "Subtitle": {
+      "name": "Subtitle",
+      "based_on": "Normal",
+      "font_ascii": null,
+      "font_hansi": null,
+      "size_half_points": null,
+      "color": "4F81BD",
+      "align": null,
+      "spacing_before": null,
+      "spacing_after": null,
+      "line": null,
+      "left_indent": null,
+      "first_line": "720",
+      "hanging": null,
+      "bold": false
+    },
+    "Heading1": {
+      "name": "heading 1",
+      "based_on": "Normal",
+      "font_ascii": null,
+      "font_hansi": null,
+      "size_half_points": "28",
+      "color": "000000",
+      "align": "center",
+      "spacing_before": "200",
+      "spacing_after": null,
+      "line": null,
+      "left_indent": null,
+      "first_line": "0",
+      "hanging": null,
+      "bold": true
+    },
+    "Heading2": {
+      "name": "heading 2",
+      "based_on": "Normal",
+      "font_ascii": null,
+      "font_hansi": null,
+      "size_half_points": null,
+      "color": "000000",
+      "align": "left",
+      "spacing_before": "200",
+      "spacing_after": null,
+      "line": null,
+      "left_indent": null,
+      "first_line": "0",
+      "hanging": null,
+      "bold": true
+    },
+    "Heading3": {
+      "name": "heading 3",
+      "based_on": "Normal",
+      "font_ascii": null,
+      "font_hansi": null,
+      "size_half_points": null,
+      "color": "000000",
+      "align": "left",
+      "spacing_before": "200",
+      "spacing_after": null,
+      "line": null,
+      "left_indent": null,
+      "first_line": "0",
+      "hanging": null,
+      "bold": true
+    }
+  },
+  "chapter4_outline": [
+    {
+      "index": 406,
+      "style_id": "Heading1",
+      "text": "CHAPTER FOURRESULTS AND DISCUSSION"
+    },
+    {
+      "index": 407,
+      "style_id": "Heading2",
+      "text": "4.1 Introduction"
+    },
+    {
+      "index": 409,
+      "style_id": "Heading2",
+      "text": "4.2 Experimental Configuration"
+    },
+    {
+      "index": 412,
+      "style_id": "Heading2",
+      "text": "4.3 Quantized Fixed-Point Baseline Results"
+    },
+    {
+      "index": 414,
+      "style_id": "Heading2",
+      "text": "4.4 RNS Reconstruction and Exact Equivalence"
+    },
+    {
+      "index": 419,
+      "style_id": "Heading2",
+      "text": "4.5 Dynamic-Range Verification"
+    },
+    {
+      "index": 423,
+      "style_id": "Heading2",
+      "text": "4.6 RRNS Fault-Injection Results"
+    },
+    {
+      "index": 428,
+      "style_id": "Heading3",
+      "text": "4.6.1 Detection by Residue Channel"
+    },
+    {
+      "index": 435,
+      "style_id": "Heading3",
+      "text": "4.6.2 Detection by MAC Position and Convolution Window"
+    },
+    {
+      "index": 438,
+      "style_id": "Heading2",
+      "text": "4.7 Output-Error Magnitude and Undetected Faults"
+    },
+    {
+      "index": 441,
+      "style_id": "Heading2",
+      "text": "4.8 Redundant-Channel and Representation Overhead"
+    },
+    {
+      "index": 445,
+      "style_id": "Heading2",
+      "text": "4.9 Verilog Functional-Verification Status"
+    },
+    {
+      "index": 449,
+      "style_id": "Heading2",
+      "text": "4.10 Comparison of the Three Computational Models"
+    },
+    {
+      "index": 451,
+      "style_id": "Heading2",
+      "text": "4.11 Discussion in Relation to Prior Work"
+    },
+    {
+      "index": 455,
+      "style_id": "Heading2",
+      "text": "4.12 Limitations"
+    },
+    {
+      "index": 464,
+      "style_id": "Heading2",
+      "text": "4.13 Relationship of the Findings to the Research Gap"
+    },
+    {
+      "index": 467,
+      "style_id": "Heading2",
+      "text": "4.14 Chapter Summary"
+    },
+    {
+      "index": 471,
+      "style_id": "Heading1",
+      "text": "CHAPTER FIVECONCLUSIONS AND RECOMMENDATIONS"
+    },
+    {
+      "index": 474,
+      "style_id": "Heading1",
+      "text": "REFERENCES"
+    },
+    {
+      "index": 494,
+      "style_id": "Heading1",
+      "text": "APPENDICES"
+    },
+    {
+      "index": 495,
+      "style_id": "Heading2",
+      "text": "Appendix A: Illustrative Python Simulation Workbook"
+    },
+    {
+      "index": 501,
+      "style_id": "Heading2",
+      "text": "Appendix B: Verilog Evidence to Be Added"
+    }
+  ],
+  "header_parts": [],
+  "footer_parts": [
+    {
+      "type": "default",
+      "target": "footer1.xml",
+      "text": "1"
+    },
+    {
+      "type": "default",
+      "target": "footer2.xml",
+      "text": "1"
+    }
+  ],
+  "table_count": 42,
+  "table_samples": [
+    {
+      "table_index": 1,
+      "rows": 1,
+      "max_cols": 3,
+      "header_sample": [
+        "",
+        "Yₙ,ₘ,ₚ,ₛ = bₘ + Σ(c=0 to C−1) Σ(u=0 to R−1) Σ(v=0 to S−1) Xₙ,꜀,ₚsₕ+u−Pₕ,qsᵥ+v−Pᵥ Wₘ,꜀,u,v",
+        "(2.1)"
+      ]
+    },
+    {
+      "table_index": 2,
+      "rows": 1,
+      "max_cols": 3,
+      "header_sample": [
+        "",
+        "Bᵢ = {m₁, m₂, …, mₖ}, mᵢ > 1",
+        "(2.2)"
+      ]
+    },
+    {
+      "table_index": 3,
+      "rows": 1,
+      "max_cols": 3,
+      "header_sample": [
+        "",
+        "gcd(mᵢ, mⱼ) = 1, for all i ≠ j",
+        "(2.3)"
+      ]
+    },
+    {
+      "table_index": 4,
+      "rows": 1,
+      "max_cols": 3,
+      "header_sample": [
+        "",
+        "X ↦ x = (x₁, x₂, …, xₖ), xᵢ = ⟨X⟩ₘᵢ",
+        "(2.4)"
+      ]
+    },
+    {
+      "table_index": 5,
+      "rows": 1,
+      "max_cols": 3,
+      "header_sample": [
+        "",
+        "Mᵢ = ∏(i=1 to k) mᵢ",
+        "(2.5)"
+      ]
+    },
+    {
+      "table_index": 6,
+      "rows": 1,
+      "max_cols": 3,
+      "header_sample": [
+        "",
+        "Dᵤ = {0, 1, …, Mᵢ − 1}",
+        "(2.6)"
+      ]
+    },
+    {
+      "table_index": 7,
+      "rows": 1,
+      "max_cols": 3,
+      "header_sample": [
+        "",
+        "Dₛ = {−⌊Mᵢ/2⌋, …, ⌈Mᵢ/2⌉ − 1}",
+        "(2.7)"
+      ]
+    },
+    {
+      "table_index": 8,
+      "rows": 1,
+      "max_cols": 3,
+      "header_sample": [
+        "",
+        "Xᵤ = ⟨Xₛ⟩Mᵢ = Xₛ if Xₛ ≥ 0; Xₛ + Mᵢ if Xₛ < 0",
+        "(2.8)"
+      ]
+    },
+    {
+      "table_index": 9,
+      "rows": 1,
+      "max_cols": 3,
+      "header_sample": [
+        "",
+        "c = a ∘ b = (c₁, c₂, …, cₖ), cᵢ = ⟨aᵢ ∘ bᵢ⟩ₘᵢ",
+        "(2.9)"
+      ]
+    },
+    {
+      "table_index": 10,
+      "rows": 1,
+      "max_cols": 3,
+      "header_sample": [
+        "",
+        "X = ⟨Σ(i=1 to k) xᵢMᵢNᵢ⟩Mᵢ",
+        "(2.10)"
+      ]
+    },
+    {
+      "table_index": 11,
+      "rows": 1,
+      "max_cols": 3,
+      "header_sample": [
+        "",
+        "Bᵣ = {mₖ₊₁, mₖ₊₂, …, mₖ₊ᵣ}",
+        "(2.11)"
+      ]
+    },
+    {
+      "table_index": 12,
+      "rows": 1,
+      "max_cols": 3,
+      "header_sample": [
+        "",
+        "Mₜ = MᵢMᵣ = ∏(i=1 to k+r) mᵢ",
+        "(2.12)"
+      ]
+    },
+    {
+      "table_index": 13,
+      "rows": 17,
+      "max_cols": 5,
+      "header_sample": [
+        "Source",
+        "Primary focus",
+        "Representation / mechanism",
+        "Main relevance to this study"
+      ]
+    },
+    {
+      "table_index": 14,
+      "rows": 1,
+      "max_cols": 3,
+      "header_sample": [
+        "",
+        "Oq[x,y] = b + Σ(i=0 to R−1) Σ(j=0 to S−1) Iq[x+i,y+j]Wq[i,j]",
+        "(3.1)"
+      ]
+    },
+    {
+      "table_index": 15,
+      "rows": 1,
+      "max_cols": 3,
+      "header_sample": [
+        "",
+        "xq = round(x/S) + Z",
+        "(3.2)"
+      ]
+    }
+  ],
+  "front_matter_sample": [
+    {
+      "index": 1,
+      "style_id": "Normal",
+      "text": "SELF-CHECKING REDUNDANT RESIDUE NUMBER SYSTEM FORQUANTIZED FIXED-POINT CONVOLUTION LAYERS INEDGE AI HARDWARE ACCELERATORS"
+    },
+    {
+      "index": 2,
+      "style_id": "Normal",
+      "text": "BYPEH ATTA JOSEPH"
+    },
+    {
+      "index": 3,
+      "style_id": "Normal",
+      "text": "A thesis submitted to the [DEPARTMENT AND UNIVERSITY TO BE INSERTED] in partial fulfilment of the requirements for the award of the Master of Philosophy degree in Computer Science."
+    },
+    {
+      "index": 4,
+      "style_id": "Normal",
+      "text": "[MONTH AND YEAR TO BE CONFIRMED]"
+    },
+    {
+      "index": 6,
+      "style_id": "Heading1",
+      "text": "DECLARATION"
+    },
+    {
+      "index": 7,
+      "style_id": "UpdateRequired",
+      "text": "UPDATE REQUIRED: Insert the university-approved declaration text, student signature, supervisor declaration, dates, and institutional wording."
+    },
+    {
+      "index": 9,
+      "style_id": "Heading1",
+      "text": "DEDICATION"
+    },
+    {
+      "index": 10,
+      "style_id": "UpdateRequired",
+      "text": "UPDATE REQUIRED: Insert the approved dedication text."
+    },
+    {
+      "index": 12,
+      "style_id": "Heading1",
+      "text": "ACKNOWLEDGEMENTS"
+    },
+    {
+      "index": 13,
+      "style_id": "UpdateRequired",
+      "text": "UPDATE REQUIRED: Insert the final acknowledgements after supervisor review."
+    },
+    {
+      "index": 14,
+      "style_id": "Normal",
+      "text": "ABSTRACT"
+    },
+    {
+      "index": 15,
+      "style_id": "Normal",
+      "text": "Convolutional neural network inference is computationally demanding because convolution layers depend heavily on repeated multiply-and-accumulate operations and the movement of weights, activations, and partial sums across the memory hierarchy. Quantized fixed-point computation can reduce arithmetic complexity, storage requirements, and memory traffic in edge AI systems; however, faults affecting convolution-layer arithmetic may still compromise numerical correctness. Existing CNN accelerators quantized neural-network frameworks, and RNS-based processing architectures have largely prioritised energy efficiency, throughput, area reduction, or conversion overhead. At the same time, component-level self-checking RRNS protection for quantized fixed-point convolution-layer MAC operations remains comparatively underexplored."
+    },
+    {
+      "index": 16,
+      "style_id": "Normal",
+      "text": "This study will design and evaluate a component-level self-checking RRNS MAC/checker for use within an edge AI hardware accelerator context rather than a complete CNN accelerator. The methodology will include Python floating-point and fixed-point reference modelling, signed accumulation-range calculation, information-modulus and redundant-modulus selection, and implementation of a conventional quantized fixed-point convolution baseline, a non-redundant RNS MAC model, and a self-checking RRNS MAC/checker model. The information moduli will define the admissible numerical payload range, whereas the redundant modulus will provide checking information without extending that payload range. RNS and RRNS results will be reconstructed using CRT or MRC, according to the final methodology, and exact reconstruction will be verified under fault-free and in-range conditions."
+    },
+    {
+      "index": 17,
+      "style_id": "Normal",
+      "text": "Systematic residue-level faults will be injected into modular products, accumulated residues, final residue values, or selected residue bits. Evaluation will distinguish quantization error, reconstruction mismatch, modular wrap-around, and fault-induced error. Metrics will include numerical error, exact-match and mismatch rates, dynamic-range sufficiency, reconstruction correctness, residue widths, fault-detection and undetected-fault rates, false-positive rate, output error magnitude, Verilog functional correctness, fault-flag behaviour, and cycle-level latency. The study will provide a bounded investigation of whether a redundant residue checking channel can detect faults covered by the defined model while preserving equivalence with quantized fixed-point convolution results under fault-free and in-range conditions."
+    },
+    {
+      "index": 18,
+      "style_id": "Normal",
+      "text": "Keywords: redundant residue number system, fixed-point convolution, fault detection, edge AI, Verilog modelling"
+    },
+    {
+      "index": 19,
+      "style_id": "UpdateRequired",
+      "text": "UPDATE REQUIRED: This is the current proposal abstract. Replace future-tense statements and insert verified findings when the final thesis abstract is prepared."
+    },
+    {
+      "index": 21,
+      "style_id": "Heading1",
+      "text": "TABLE OF CONTENTS"
+    },
+    {
+      "index": 22,
+      "style_id": "Normal",
+      "text": "Table of Contents - update field in Microsoft Word if page numbers are not displayed."
+    },
+    {
+      "index": 24,
+      "style_id": "Heading1",
+      "text": "LIST OF TABLES"
+    },
+    {
+      "index": 25,
+      "style_id": "UpdateRequired",
+      "text": "UPDATE REQUIRED: Update the automatic List of Tables after all captions and page numbers have been finalized."
+    },
+    {
+      "index": 27,
+      "style_id": "Heading1",
+      "text": "LIST OF FIGURES"
+    },
+    {
+      "index": 28,
+      "style_id": "UpdateRequired",
+      "text": "UPDATE REQUIRED: Update the automatic List of Figures after all captions and page numbers have been finalized."
+    },
+    {
+      "index": 30,
+      "style_id": "Heading1",
+      "text": "LIST OF ABBREVIATIONS"
+    },
+    {
+      "index": 31,
+      "style_id": "Normal",
+      "text": "ABFTAlgorithm-Based Fault Tolerance"
+    },
+    {
+      "index": 32,
+      "style_id": "Normal",
+      "text": "ASICApplication-Specific Integrated Circuit"
+    },
+    {
+      "index": 33,
+      "style_id": "Normal",
+      "text": "CNNConvolutional Neural Network"
+    },
+    {
+      "index": 34,
+      "style_id": "Normal",
+      "text": "CRTChinese Remainder Theorem"
+    },
+    {
+      "index": 35,
+      "style_id": "Normal",
+      "text": "DNNDeep Neural Network"
+    },
+    {
+      "index": 36,
+      "style_id": "Normal",
+      "text": "FPGAField-Programmable Gate Array"
+    },
+    {
+      "index": 37,
+      "style_id": "Normal",
+      "text": "MACMultiply-and-Accumulate"
+    },
+    {
+      "index": 38,
+      "style_id": "Normal",
+      "text": "MRCMixed Radix Conversion"
+    },
+    {
+      "index": 39,
+      "style_id": "Normal",
+      "text": "PEProcessing Element"
+    },
+    {
+      "index": 40,
+      "style_id": "Normal",
+      "text": "QNNQuantized Neural Network"
+    },
+    {
+      "index": 41,
+      "style_id": "Normal",
+      "text": "RNSResidue Number System"
+    },
+    {
+      "index": 42,
+      "style_id": "Normal",
+      "text": "RRNSRedundant Residue Number System"
+    },
+    {
+      "index": 44,
+      "style_id": "Heading1",
+      "text": "CHAPTER ONEINTRODUCTION"
+    },
+    {
+      "index": 45,
+      "style_id": "Heading2",
+      "text": "1.1 Background of the Study"
+    },
+    {
+      "index": 46,
+      "style_id": "Normal",
+      "text": "Convolutional Neural Networks (CNNs) have become fundamental to contemporary artificial intelligence applications, including image classification, object detection, autonomous systems, robotics, medical imaging, and intelligent sensing. Their effectiveness is largely attributable to their ability to learn hierarchical representations from multidimensional input data. However, the computational benefits of CNNs are accompanied by substantial arithmetic, memory, and data-movement requirements. These demands are especially significant when CNN inference is deployed on edge devices, where processing capability, memory capacity, energy availability, and response time are constrained."
+    },
+    {
+      "index": 47,
+      "style_id": "Normal",
+      "text": "The convolution layer is one of the principal computational components of a CNN. Each output element is generated by repeatedly multiplying input activations by filter weights, then summing the resulting partial products. Consequently, convolution is dominated by multiply-and-accumulate (MAC) operations. The number of MAC operations increases with the dimensions of the input feature maps, kernel size, number of input channels, number of filters, and number of convolution layers. Sze et al. (2017) demonstrated that widely used CNN architectures may require hundreds of millions or billions of MAC operations for a single inference, depending on the network configuration."
+    },
+    {
+      "index": 48,
+      "style_id": "Normal",
+      "text": "CNN inference is not only computationally intensive but also data-movement intensive. Filter weights, input activations, output activations, and partial sums must be transferred among different levels of the accelerator memory hierarchy. Chen et al. (2016) showed through the Eyeriss architecture that data movement may consume more energy than the arithmetic operations themselves, particularly when data are repeatedly fetched from off-chip memory. Their row-stationary dataflow reduces this cost by increasing the reuse of weights, activations, and partial sums within and among processing elements. This work establishes that efficient CNN hardware design requires consideration of both arithmetic computation and the movement of data supporting that computation."
+    },
+    {
+      "index": 49,
+      "style_id": "Normal",
+      "text": "The challenges associated with CNN deployment are more pronounced in edge artificial intelligence systems. Edge AI devices are expected to perform inference near the source of the data instead of continuously transferring raw data to cloud servers. Such devices may include embedded controllers, sensors, mobile devices, autonomous platforms, industrial monitoring systems, and wearable technologies. Performing inference locally can reduce communication latency and dependence on network connectivity, but it requires CNN computation to operate within limited power, memory, area, and processing budgets."
+    },
+    {
+      "index": 50,
+      "style_id": "Normal",
+      "text": "Quantization is one of the major techniques used to reduce CNN inference cost. It maps high-precision floating-point weights and activations to lower-precision integer or fixed-point representations. Jacob et al. (2018) presented an integer-arithmetic-only inference scheme in which quantized weights and activations are processed using integer convolution, while wider accumulators are used to preserve intermediate results. Krishnamoorthi (2018) similarly showed that low-precision weights and activations can reduce"
+    },
+    {
+      "index": 51,
+      "style_id": "Normal",
+      "text": "model size, memory traffic, and computation cost, particularly when the hardware is designed to support reduced-precision arithmetic."
+    },
+    {
+      "index": 52,
+      "style_id": "Normal",
+      "text": "The present research focuses on quantized fixed-point convolution rather than complete CNN classification. Fixed-point quantization introduces an approximation because continuous or floating-point values are mapped to a finite set of representable values. This quantization error must be distinguished from errors introduced by an alternative arithmetic representation. In this study, quantization error refers to the numerical difference between a floating-point convolution reference and the corresponding quantized fixed-point convolution result. By contrast, Residue Number System reconstruction error refers to a difference between the quantized fixed-point result and the value reconstructed after residue-domain computation. When the moduli provide sufficient dynamic range and the residue arithmetic and reconstruction procedures are correct, the RNS result should reproduce the quantized fixed-point result exactly."
+    },
+    {
+      "index": 53,
+      "style_id": "Normal",
+      "text": "Although quantization reduces operand bit width, convolution-layer MAC operations remain a major component of the hardware datapath. Conventional positional binary arithmetic involves carry propagation across bit positions, while multiplication and accumulation must accommodate the required operand and partial-sum widths. This has motivated research into alternative numerical representations that can support parallel and lower-width arithmetic."
+    },
+    {
+      "index": 54,
+      "style_id": "Normal",
+      "text": "The Residue Number System (RNS) is an alternative, non-weighted number representation in which an integer is expressed as a set of residues with respect to pairwise coprime moduli. Addition and multiplication can be performed independently within the individual residue channels, without carry propagation between those channels. This property makes RNS suitable for computation dominated by addition and multiplication, including convolution-layer MAC operations."
+    },
+    {
+      "index": 55,
+      "style_id": "Normal",
+      "text": "Several studies have demonstrated the potential of RNS for CNN and DNN acceleration. Valueva et al. (2020) investigated an RNS-based convolution-layer implementation and reported reductions in hardware resource requirements relative to a two's-complement implementation under their evaluated conditions. Liu and Mattina (2020) extended Winograd convolution into the RNS domain to permit exact low-precision integer convolution using small residue-channel arithmetic. Samimi et al. (2020) proposed Res-DNN, which implemented major DNN operations in the RNS domain and investigated energy-efficient RNS processing elements. Roohi et al. (2021) proposed RNSiM and addressed the overhead of intermodulo operations such as sign detection, comparison, and scaling. Salamat et al. (2021) proposed Residue-Net, which exploited small residue values to simplify multiplication through shift-and-add operations."
+    },
+    {
+      "index": 56,
+      "style_id": "Normal",
+      "text": "These studies demonstrate that RNS can support efficient arithmetic in CNN and DNN hardware. However, they also reveal important limitations. The performance of an RNS design depends on the number, size, and form of the selected moduli. The product of the informational moduli defines the available dynamic range, and an insufficient dynamic range causes modular wrap-around and incorrect reconstruction. Operations such as sign detection, comparison, division, scaling, activation functions, and reverse conversion are also more complex than residue-domain addition and multiplication. Therefore, the benefit of RNS is strongest where a large number of MAC operations can be performed between conversions."
+    },
+    {
+      "index": 57,
+      "style_id": "Normal",
+      "text": "In addition to arithmetic efficiency, reliability is an important consideration in edge AI hardware. Hardware faults may corrupt weights, activations, partial sums, arithmetic outputs, or control information. Gambardella et al. (2019) demonstrated that quantized neural networks are not uniformly tolerant of"
+    },
+    {
+      "index": 58,
+      "style_id": "Normal",
+      "text": "permanent faults and that faults affecting convolution-processing resources may cause significant output degradation. Their work proposed selective channel replication and fault-aware processing-element scheduling as alternatives to indiscriminate full-system redundancy. Zhao et al. (2021) proposed FT-CNN, which applied algorithm-based fault-tolerance schemes to convolution operations to detect or correct soft errors with lower overhead than conventional duplication approaches."
+    },
+    {
+      "index": 59,
+      "style_id": "Normal",
+      "text": "Residue representations provide another foundation for arithmetic fault detection. A Redundant Residue Number System (RRNS) extends a conventional RNS by adding one or more redundant residue channels beyond those required to represent the intended numerical range. The redundant information can be used to check the consistency of the residue representation and, under an explicitly defined fault model, detect certain erroneous residue combinations. Etzel and Jenkins (1980) established the use of RRNS properties for error detection and correction in digital filters, demonstrating the broader suitability of redundant residue arithmetic for MAC-intensive digital signal processing. Huang (2019) subsequently proposed a self-checking residue-based neural network design and examined checking under a single-residue fault model. Fu et al. (2021) further investigated RRNS-based reliable neural-network arithmetic and the reduction of conventional redundancy and converter overhead."
+    },
+    {
+      "index": 60,
+      "style_id": "Normal",
+      "text": "These reliability studies provide a theoretical and architectural basis for self-checking residue arithmetic. Nevertheless, existing RNS-based CNN accelerator research primarily emphasises arithmetic performance, power, area, throughput, or the handling of non-trivial residue operations. Conversely, CNN reliability studies often employ algorithm-based checksums, processing-channel replication, or network-level protection. There remains an opportunity to investigate a focused, component-level self-checking RRNS model for the quantized fixed-point MAC operations of a convolution layer."
+    },
+    {
+      "index": 61,
+      "style_id": "Normal",
+      "text": "Accordingly, this research investigates a self-checking RRNS MAC/checker component intended for use within the processing datapath of an edge AI hardware accelerator. The proposed work does not constitute a complete CNN accelerator. Instead, it isolates the convolution-layer arithmetic component so that its fixed-point numerical behaviour, residue reconstruction, dynamic-range requirements, redundant-residue checking capability, and functional hardware behaviour can be evaluated systematically using Python simulation and Verilog modelling."
+    },
+    {
+      "index": 62,
+      "style_id": "Heading2",
+      "text": "1.2 Statement of the Problem"
+    },
+    {
+      "index": 63,
+      "style_id": "Normal",
+      "text": "Quantized fixed-point CNN inference is an important approach for deploying convolutional models on resource-constrained edge devices. Reducing the precision of weights and activations lowers storage and arithmetic requirements, but convolution layers continue to require repeated MAC operations. These operations must produce numerically correct fixed-point results while operating within the constrained datapaths expected in edge AI hardware accelerators."
+    },
+    {
+      "index": 64,
+      "style_id": "Normal",
+      "text": "RNS provides a promising representation for convolution-layer MAC operations because multiplication and addition can be decomposed into independent modular channels. However, the correctness of an RNS implementation depends on the selected moduli, the supported signed range, the accumulator bound, the conversion process, and the reconstruction method. If the product of the informational moduli is smaller than the required convolution accumulation range, modular wrap-around may occur. This produces an RNS reconstruction error even when each modular operation is internally correct."
+    },
+    {
+      "index": 65,
+      "style_id": "Normal",
+      "text": "This reconstruction error is distinct from fixed-point quantization error. Quantization error originates from mapping floating-point inputs and weights to a restricted fixed-point representation. It may remain present even when the subsequent fixed-point arithmetic is implemented correctly. RNS reconstruction error, however, is an implementation error relative to the quantized fixed-point baseline and should ideally be zero when the moduli set and signed reconstruction procedure are correctly designed."
+    },
+    {
+      "index": 66,
+      "style_id": "Normal",
+      "text": "A further problem concerns arithmetic reliability. A fault in one residue channel may corrupt a modular product, accumulated residue, or reconstructed output. Without a checking mechanism, such corruption may propagate through the convolution datapath without an explicit indication that an error has occurred. Full duplication or triple modular redundancy may provide protection, but these methods introduce substantial replication and may conflict with the compact design goals of edge AI hardware."
+    },
+    {
+      "index": 67,
+      "style_id": "Normal",
+      "text": "RRNS introduces redundant residue information that can support arithmetic consistency checking. However, the checking capability is dependent on the moduli set, redundant range, checker design, and assumed fault model. Existing work has established RRNS error-detection principles and has applied residue checking to neural-network and signal-processing systems. Nevertheless, limited research has provided a controlled component-level evaluation that integrates quantized fixed-point convolution, RNS MAC computation, redundant residue checking, dynamic-range analysis, systematic fault injection, and functional Verilog modelling within a single edge AI accelerator-oriented study."
+    },
+    {
+      "index": 68,
+      "style_id": "Normal",
+      "text": "The central problem addressed by this research is therefore the need for a technically verifiable self-checking RRNS component for quantized fixed-point convolution-layer MAC operations. The proposed component must reproduce the quantized fixed-point convolution result when no fault is present, provide sufficient residue dynamic range for the selected convolution configuration, and generate an appropriate fault indication when faults covered by the defined fault model are introduced."
+    }
+  ]
+}

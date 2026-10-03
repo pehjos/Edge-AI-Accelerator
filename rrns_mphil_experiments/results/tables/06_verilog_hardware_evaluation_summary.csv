@@ -1,0 +1,3 @@
+RRNS System,RRNS Configuration,Informative Moduli,Redundant Modulus,Informative Dynamic Range,Balanced Signed Limit,Informative Channels,Total Channels,Channel Overhead Ratio,Informative Bits,Redundant Bits,Total Residue Bits,Residue Bit Overhead Ratio,Coding Efficiency,Testbench Cases,PASS Checks,FAIL Checks,Simulation Pass Rate,Simulation Verdict,Waveform Available
+"System A: RRNS(17, 19, 23)+(29)","RRNS(17, 19, 23)+(29)","(17, 19, 23)",(29),7429,3714,3,4,0.3333333333333333,15,5,20,0.3333333333333333,0.6429476155375469,5,20,0,1.0,PASS,True
+"System B: RRNS(29, 31, 37)+(41)","RRNS(29, 31, 37)+(41)","(29, 31, 37)",(41),33263,16631,3,4,0.3333333333333333,16,6,22,0.375,0.6828013941428817,5,20,0,1.0,PASS,True

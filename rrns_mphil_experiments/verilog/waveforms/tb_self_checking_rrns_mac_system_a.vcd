@@ -1,0 +1,413 @@
+$date
+	Thu Jul 23 11:32:55 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_self_checking_rrns_mac_system_a $end
+$var wire 5 ! syndrome [4:0] $end
+$var wire 13 " reconstructed_unsigned [12:0] $end
+$var wire 16 # reconstructed_signed [15:0] $end
+$var wire 5 $ predicted_redundant [4:0] $end
+$var wire 5 % clean_residue_m29 [4:0] $end
+$var wire 5 & clean_residue_m23 [4:0] $end
+$var wire 5 ' clean_residue_m19 [4:0] $end
+$var wire 5 ( clean_residue_m17 [4:0] $end
+$var wire 1 ) checker_valid $end
+$var wire 5 * checked_residue_m29 [4:0] $end
+$var wire 5 + checked_residue_m23 [4:0] $end
+$var wire 5 , checked_residue_m19 [4:0] $end
+$var wire 5 - checked_residue_m17 [4:0] $end
+$var wire 16 . binary_dot_product [15:0] $end
+$var parameter 32 / IN_WIDTH $end
+$var parameter 32 0 TAP_COUNT $end
+$var reg 5 1 fault_residue_m17 [4:0] $end
+$var reg 5 2 fault_residue_m19 [4:0] $end
+$var reg 5 3 fault_residue_m23 [4:0] $end
+$var reg 5 4 fault_residue_m29 [4:0] $end
+$var reg 1 5 use_fault_override $end
+$var integer 32 6 fail_count [31:0] $end
+$var integer 32 7 pass_count [31:0] $end
+$var integer 32 8 tap [31:0] $end
+$scope module dut $end
+$var wire 5 9 fault_residue_m17 [4:0] $end
+$var wire 5 : fault_residue_m19 [4:0] $end
+$var wire 5 ; fault_residue_m23 [4:0] $end
+$var wire 5 < fault_residue_m29 [4:0] $end
+$var wire 1 5 use_fault_override $end
+$var wire 5 = syndrome [4:0] $end
+$var wire 13 > reconstructed_unsigned [12:0] $end
+$var wire 16 ? reconstructed_signed [15:0] $end
+$var wire 5 @ predicted_redundant [4:0] $end
+$var wire 5 A clean_residue_m29 [4:0] $end
+$var wire 5 B clean_residue_m23 [4:0] $end
+$var wire 5 C clean_residue_m19 [4:0] $end
+$var wire 5 D clean_residue_m17 [4:0] $end
+$var wire 1 ) checker_valid $end
+$var parameter 32 E IN_WIDTH $end
+$var parameter 32 F TAP_COUNT $end
+$var reg 16 G binary_dot_product [15:0] $end
+$var reg 5 H checked_residue_m17 [4:0] $end
+$var reg 5 I checked_residue_m19 [4:0] $end
+$var reg 5 J checked_residue_m23 [4:0] $end
+$var reg 5 K checked_residue_m29 [4:0] $end
+$var integer 32 L dot_product_int [31:0] $end
+$var integer 32 M tap [31:0] $end
+$scope module checker_u $end
+$var wire 5 N residue_m17 [4:0] $end
+$var wire 5 O residue_m19 [4:0] $end
+$var wire 5 P residue_m23 [4:0] $end
+$var wire 5 Q residue_m29 [4:0] $end
+$var parameter 32 R BALANCED_LIMIT $end
+$var parameter 32 S CRT_COEFF_M17 $end
+$var parameter 32 T CRT_COEFF_M19 $end
+$var parameter 32 U CRT_COEFF_M23 $end
+$var parameter 32 V INFORMATIVE_DYNAMIC_RANGE $end
+$var parameter 32 W M1 $end
+$var parameter 32 X M2 $end
+$var parameter 32 Y M3 $end
+$var parameter 32 Z MR $end
+$var reg 1 ) checker_valid $end
+$var reg 5 [ predicted_redundant [4:0] $end
+$var reg 16 \ reconstructed_signed [15:0] $end
+$var reg 13 ] reconstructed_unsigned [12:0] $end
+$var reg 5 ^ syndrome [4:0] $end
+$var integer 32 _ predicted_redundant_int [31:0] $end
+$var integer 32 ` reconstructed_signed_int [31:0] $end
+$var integer 32 a reconstructed_unsigned_int [31:0] $end
+$var integer 32 b syndrome_int [31:0] $end
+$scope function signed_mod $end
+$upscope $end
+$upscope $end
+$scope module residue_m17_mac $end
+$var parameter 32 c IN_WIDTH $end
+$var parameter 32 d MODULUS $end
+$var parameter 32 e OUT_WIDTH $end
+$var parameter 32 f TAP_COUNT $end
+$var reg 5 g residue_sum [4:0] $end
+$var integer 32 h a_residue [31:0] $end
+$var integer 32 i residue_accum [31:0] $end
+$var integer 32 j tap [31:0] $end
+$var integer 32 k w_residue [31:0] $end
+$scope function signed_mod $end
+$upscope $end
+$upscope $end
+$scope module residue_m19_mac $end
+$var parameter 32 l IN_WIDTH $end
+$var parameter 32 m MODULUS $end
+$var parameter 32 n OUT_WIDTH $end
+$var parameter 32 o TAP_COUNT $end
+$var reg 5 p residue_sum [4:0] $end
+$var integer 32 q a_residue [31:0] $end
+$var integer 32 r residue_accum [31:0] $end
+$var integer 32 s tap [31:0] $end
+$var integer 32 t w_residue [31:0] $end
+$scope function signed_mod $end
+$upscope $end
+$upscope $end
+$scope module residue_m23_mac $end
+$var parameter 32 u IN_WIDTH $end
+$var parameter 32 v MODULUS $end
+$var parameter 32 w OUT_WIDTH $end
+$var parameter 32 x TAP_COUNT $end
+$var reg 5 y residue_sum [4:0] $end
+$var integer 32 z a_residue [31:0] $end
+$var integer 32 { residue_accum [31:0] $end
+$var integer 32 | tap [31:0] $end
+$var integer 32 } w_residue [31:0] $end
+$scope function signed_mod $end
+$upscope $end
+$upscope $end
+$scope module residue_m29_mac $end
+$var parameter 32 ~ IN_WIDTH $end
+$var parameter 32 !" MODULUS $end
+$var parameter 32 "" OUT_WIDTH $end
+$var parameter 32 #" TAP_COUNT $end
+$var reg 5 $" residue_sum [4:0] $end
+$var integer 32 %" a_residue [31:0] $end
+$var integer 32 &" residue_accum [31:0] $end
+$var integer 32 '" tap [31:0] $end
+$var integer 32 (" w_residue [31:0] $end
+$scope function signed_mod $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope task check_equal_bit $end
+$upscope $end
+$scope task check_equal_int $end
+$upscope $end
+$scope task clear_inputs $end
+$upscope $end
+$scope task load_multi_tap_case $end
+$upscope $end
+$scope task load_single_product_case $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1001 #"
+b101 ""
+b11101 !"
+b1000 ~
+b1001 x
+b101 w
+b10111 v
+b1000 u
+b1001 o
+b101 n
+b10011 m
+b1000 l
+b1001 f
+b101 e
+b10001 d
+b1000 c
+b11101 Z
+b10111 Y
+b10011 X
+b10001 W
+b1110100000101 V
+b101000011 U
+b101010110001 T
+b1000100010010 S
+b111010000010 R
+b1001 F
+b1000 E
+b1001 0
+b1000 /
+$end
+#0
+$dumpvars
+b0 ("
+b1001 '"
+b11 &"
+b0 %"
+b11 $"
+b0 }
+b1001 |
+b111 {
+b0 z
+b111 y
+b0 t
+b1001 s
+b1001 r
+b0 q
+b1001 p
+b0 k
+b1001 j
+b100 i
+b0 h
+b100 g
+b0 b
+b1110000111101 a
+b11111111111111111111111100111000 `
+b11 _
+b0 ^
+b1110000111101 ]
+b1111111100111000 \
+b11 [
+b11 Q
+b111 P
+b1001 O
+b100 N
+b1001 M
+b11111111111111111111111100111000 L
+b11 K
+b111 J
+b1001 I
+b100 H
+b1111111100111000 G
+b100 D
+b1001 C
+b111 B
+b11 A
+b11 @
+b1111111100111000 ?
+b1110000111101 >
+b0 =
+b0 <
+b0 ;
+b0 :
+b0 9
+b1001 8
+b0 7
+b0 6
+05
+b0 4
+b0 3
+b0 2
+b0 1
+b1111111100111000 .
+b100 -
+b1001 ,
+b111 +
+b11 *
+1)
+b100 (
+b1001 '
+b111 &
+b11 %
+b11 $
+b1111111100111000 #
+b1110000111101 "
+b0 !
+$end
+#1000
+0)
+b1110 !
+b1110 =
+b1110 ^
+b10010 $
+b10010 @
+b10010 [
+b1111001101000101 #
+b1111001101000101 ?
+b1111001101000101 \
+b1000001001010 "
+b1000001001010 >
+b1000001001010 ]
+b1110 b
+b10010 _
+b11111111111111111111001101000101 `
+b1000001001010 a
+b101 -
+b101 H
+b101 N
+b11 4
+b11 <
+b111 3
+b111 ;
+b1001 2
+b1001 :
+b101 1
+b101 9
+15
+b1000 7
+#2000
+b1 !
+b1 =
+b1 ^
+b11 $
+b11 @
+b11 [
+b1111111100111000 #
+b1111111100111000 ?
+b1111111100111000 \
+b1110000111101 "
+b1110000111101 >
+b1110000111101 ]
+b1 b
+b11 _
+b11111111111111111111111100111000 `
+b1110000111101 a
+b100 *
+b100 K
+b100 Q
+b100 -
+b100 H
+b100 N
+b100 4
+b100 <
+b100 1
+b100 9
+b1001 7
+#3000
+1)
+b0 !
+b0 =
+b0 ^
+b1111010011001100 #
+b1111010011001100 ?
+b1111010011001100 \
+b1000111010001 "
+b1000111010001 >
+b1000111010001 ]
+b0 b
+b11111111111111111111010011001100 `
+b1000111010001 a
+b11 *
+b11 K
+b11 Q
+b1 ,
+b1 I
+b1 O
+b101 -
+b101 H
+b101 N
+b11 4
+b11 <
+b1 2
+b1 :
+b101 1
+b101 9
+b1011 7
+#4000
+b11010 $
+b11010 @
+b11010 [
+b10001110 #
+b10001110 ?
+b10001110 \
+b10001110 "
+b10001110 >
+b10001110 ]
+b11010 _
+b10001110 `
+b10001110 a
+b11010 *
+b11010 K
+b11010 Q
+b100 +
+b100 J
+b100 P
+b1001 ,
+b1001 I
+b1001 O
+b110 -
+b110 H
+b110 N
+b110 (
+b110 D
+b110 g
+b111 k
+b10 h
+b1001 j
+b110 i
+b111 t
+b10 q
+b1001 s
+b1001 r
+b100 &
+b100 B
+b100 y
+b111 }
+b10 z
+b1001 |
+b100 {
+b11010 %
+b11010 A
+b11010 $"
+b111 ("
+b10 %"
+b1001 '"
+b11010 &"
+b10001110 .
+b10001110 G
+b1001 M
+b10001110 L
+b0 4
+b0 <
+b0 3
+b0 ;
+b0 2
+b0 :
+b0 1
+b0 9
+05
+b1001 8
+b1101 7
+#5000
+b10100 7

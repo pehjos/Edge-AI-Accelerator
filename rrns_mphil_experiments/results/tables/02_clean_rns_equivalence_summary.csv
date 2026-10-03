@@ -1,0 +1,5 @@
+Case Code,Test Case,Feature-Map Size,Kernel Size,Fixed-Point Format,RRNS System,Informative Dynamic Range,Balanced Signed Limit,Observed Max |Output|,Range Margin,Number of Outputs,Exact Match Rate,Checker Acceptance Rate,All Integer Matches,All Checks Valid,Input Clip Count,Kernel Clip Count
+TC1,Test Case 1: Small workload (Q4.4),6x6,3x3,Q4.4,"RRNS(17, 19, 23)+(29)",7429,3714,325,3389,16,1.0,1.0,True,True,0,0
+TC2,Test Case 2: Medium workload (Q5.5),8x8,3x3,Q5.5,"RRNS(17, 19, 23)+(29)",7429,3714,1797,1917,36,1.0,1.0,True,True,0,0
+TC3,Test Case 3: Large-kernel workload (Q6.6),9x9,5x5,Q6.6,"RRNS(29, 31, 37)+(41)",33263,16631,14489,2142,25,1.0,1.0,True,True,0,0
+TC4,Test Case 4: Near-range stress workload (Q7.5),10x10,3x3,Q7.5,"RRNS(17, 19, 23)+(29)",7429,3714,2953,761,64,1.0,1.0,True,True,0,0

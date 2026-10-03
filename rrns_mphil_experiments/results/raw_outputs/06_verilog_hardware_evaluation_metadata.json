@@ -1,0 +1,14 @@
+{
+  "systems": [
+    "RRNS(17, 19, 23)+(29)",
+    "RRNS(29, 31, 37)+(41)"
+  ],
+  "source_logs": [
+    "C:\\Users\\PehAttaJoseph\\Documents\\GitHub\\Edge-AI-Accelerator\\rrns_mphil_experiments\\verilog\\logs\\tb_self_checking_rrns_mac_system_a.log",
+    "C:\\Users\\PehAttaJoseph\\Documents\\GitHub\\Edge-AI-Accelerator\\rrns_mphil_experiments\\verilog\\logs\\tb_self_checking_rrns_mac_system_b.log"
+  ],
+  "source_waveforms": [
+    "C:\\Users\\PehAttaJoseph\\Documents\\GitHub\\Edge-AI-Accelerator\\rrns_mphil_experiments\\verilog\\waveforms\\tb_self_checking_rrns_mac_system_a.vcd",
+    "C:\\Users\\PehAttaJoseph\\Documents\\GitHub\\Edge-AI-Accelerator\\rrns_mphil_experiments\\verilog\\waveforms\\tb_self_checking_rrns_mac_system_b.vcd"
+  ]
+}

@@ -1,0 +1,68 @@
+2026-07-22 12:32:07 | INFO | 02_clean_rns_equivalence | Selected RRNS system RRNS(17, 19, 23)+(29) for max |accumulator|=325
+2026-07-22 12:32:08 | INFO | 02_clean_rns_equivalence | Saved raw outputs to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\02_clean_rns_equivalence_raw.csv
+2026-07-22 12:32:08 | INFO | 02_clean_rns_equivalence | Saved summary table to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\tables\02_clean_rns_equivalence_summary.csv
+2026-07-22 12:32:08 | INFO | 02_clean_rns_equivalence | Saved figure to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\figures\02_clean_rns_equivalence_heatmaps.png
+2026-07-22 12:32:08 | INFO | 02_clean_rns_equivalence | Saved metadata to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\02_clean_rns_equivalence_metadata.json
+2026-07-22 13:00:43 | INFO | 02_clean_rns_equivalence | Selected RRNS system RRNS(17, 19, 23)+(29) for max |accumulator|=325
+2026-07-22 13:00:44 | INFO | 02_clean_rns_equivalence | Saved raw outputs to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\02_clean_rns_equivalence_raw.csv
+2026-07-22 13:00:44 | INFO | 02_clean_rns_equivalence | Saved summary table to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\tables\02_clean_rns_equivalence_summary.csv
+2026-07-22 13:00:44 | INFO | 02_clean_rns_equivalence | Saved figure to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\figures\02_clean_rns_equivalence_heatmaps.png
+2026-07-22 13:00:44 | INFO | 02_clean_rns_equivalence | Saved metadata to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\02_clean_rns_equivalence_metadata.json
+2026-07-22 13:02:40 | INFO | 02_clean_rns_equivalence | Selected RRNS system RRNS(17, 19, 23)+(29) for max |accumulator|=325
+2026-07-22 13:02:41 | INFO | 02_clean_rns_equivalence | Saved raw outputs to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\02_clean_rns_equivalence_raw.csv
+2026-07-22 13:02:41 | INFO | 02_clean_rns_equivalence | Saved summary table to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\tables\02_clean_rns_equivalence_summary.csv
+2026-07-22 13:02:41 | INFO | 02_clean_rns_equivalence | Saved figure to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\figures\02_clean_rns_equivalence_heatmaps.png
+2026-07-22 13:02:41 | INFO | 02_clean_rns_equivalence | Saved metadata to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\02_clean_rns_equivalence_metadata.json
+2026-07-22 13:05:05 | INFO | 02_clean_rns_equivalence | Selected RRNS system RRNS(17, 19, 23)+(29) for max |accumulator|=325
+2026-07-22 13:05:06 | INFO | 02_clean_rns_equivalence | Saved raw outputs to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\02_clean_rns_equivalence_raw.csv
+2026-07-22 13:05:06 | INFO | 02_clean_rns_equivalence | Saved summary table to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\tables\02_clean_rns_equivalence_summary.csv
+2026-07-22 13:05:06 | INFO | 02_clean_rns_equivalence | Saved figure to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\figures\02_clean_rns_equivalence_heatmaps.png
+2026-07-22 13:05:06 | INFO | 02_clean_rns_equivalence | Saved metadata to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\02_clean_rns_equivalence_metadata.json
+2026-07-22 13:13:47 | INFO | 02_clean_rns_equivalence | Case case_a_q4_4_small uses RRNS(17, 19, 23)+(29) with max |accumulator|=325 and balanced limit=3714.
+2026-07-22 13:13:47 | INFO | 02_clean_rns_equivalence | Case case_b_q5_5_medium uses RRNS(17, 19, 23)+(29) with max |accumulator|=1797 and balanced limit=3714.
+2026-07-22 13:13:47 | INFO | 02_clean_rns_equivalence | Case case_c_q6_6_large_kernel uses RRNS(29, 31, 37)+(41) with max |accumulator|=14489 and balanced limit=16631.
+2026-07-22 13:13:47 | INFO | 02_clean_rns_equivalence | Case case_d_q6_5_stress uses RRNS(17, 19, 23)+(29) with max |accumulator|=2953 and balanced limit=3714.
+2026-07-22 13:13:48 | INFO | 02_clean_rns_equivalence | Saved raw outputs to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\02_clean_rns_equivalence_raw.csv
+2026-07-22 13:13:48 | INFO | 02_clean_rns_equivalence | Saved summary table to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\tables\02_clean_rns_equivalence_summary.csv
+2026-07-22 13:13:48 | INFO | 02_clean_rns_equivalence | Saved figure to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\figures\02_clean_rns_equivalence_stress_summary.png
+2026-07-22 13:13:48 | INFO | 02_clean_rns_equivalence | Saved metadata to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\02_clean_rns_equivalence_metadata.json
+2026-07-22 13:19:14 | INFO | 02_clean_rns_equivalence | Case case_a_q4_4_small uses RRNS(17, 19, 23)+(29) with max |accumulator|=325 and balanced limit=3714.
+2026-07-22 13:19:14 | INFO | 02_clean_rns_equivalence | Case case_b_q5_5_medium uses RRNS(17, 19, 23)+(29) with max |accumulator|=1797 and balanced limit=3714.
+2026-07-22 13:19:14 | INFO | 02_clean_rns_equivalence | Case case_c_q6_6_large_kernel uses RRNS(29, 31, 37)+(41) with max |accumulator|=14489 and balanced limit=16631.
+2026-07-22 13:19:14 | INFO | 02_clean_rns_equivalence | Case case_d_q6_5_stress uses RRNS(17, 19, 23)+(29) with max |accumulator|=2953 and balanced limit=3714.
+2026-07-22 13:19:15 | INFO | 02_clean_rns_equivalence | Saved raw outputs to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\02_clean_rns_equivalence_raw.csv
+2026-07-22 13:19:15 | INFO | 02_clean_rns_equivalence | Saved summary table to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\tables\02_clean_rns_equivalence_summary.csv
+2026-07-22 13:19:15 | INFO | 02_clean_rns_equivalence | Saved figure to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\figures\02_clean_rns_equivalence_stress_summary.png
+2026-07-22 13:19:15 | INFO | 02_clean_rns_equivalence | Saved metadata to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\02_clean_rns_equivalence_metadata.json
+2026-07-22 13:27:34 | INFO | 02_clean_rns_equivalence | Case tc1_small_low_precision uses RRNS(17, 19, 23)+(29) with max |accumulator|=325 and balanced limit=3714.
+2026-07-22 13:27:34 | INFO | 02_clean_rns_equivalence | Case tc2_medium_precision uses RRNS(17, 19, 23)+(29) with max |accumulator|=1797 and balanced limit=3714.
+2026-07-22 13:27:34 | INFO | 02_clean_rns_equivalence | Case tc3_large_kernel_high_precision uses RRNS(29, 31, 37)+(41) with max |accumulator|=14489 and balanced limit=16631.
+2026-07-22 13:27:34 | INFO | 02_clean_rns_equivalence | Case tc4_near_limit_stress uses RRNS(17, 19, 23)+(29) with max |accumulator|=2953 and balanced limit=3714.
+2026-07-22 13:27:35 | INFO | 02_clean_rns_equivalence | Saved raw outputs to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\02_clean_rns_equivalence_raw.csv
+2026-07-22 13:27:35 | INFO | 02_clean_rns_equivalence | Saved summary table to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\tables\02_clean_rns_equivalence_summary.csv
+2026-07-22 13:27:35 | INFO | 02_clean_rns_equivalence | Saved figure to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\figures\02_clean_rns_equivalence_stress_summary.png
+2026-07-22 13:27:35 | INFO | 02_clean_rns_equivalence | Saved metadata to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\02_clean_rns_equivalence_metadata.json
+2026-07-22 13:28:53 | INFO | 02_clean_rns_equivalence | Case tc1_small_low_precision uses RRNS(17, 19, 23)+(29) with max |accumulator|=325 and balanced limit=3714.
+2026-07-22 13:28:53 | INFO | 02_clean_rns_equivalence | Case tc2_medium_precision uses RRNS(17, 19, 23)+(29) with max |accumulator|=1797 and balanced limit=3714.
+2026-07-22 13:28:53 | INFO | 02_clean_rns_equivalence | Case tc3_large_kernel_high_precision uses RRNS(29, 31, 37)+(41) with max |accumulator|=14489 and balanced limit=16631.
+2026-07-22 13:28:53 | INFO | 02_clean_rns_equivalence | Case tc4_near_limit_stress uses RRNS(17, 19, 23)+(29) with max |accumulator|=2953 and balanced limit=3714.
+2026-07-22 13:28:55 | INFO | 02_clean_rns_equivalence | Saved raw outputs to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\02_clean_rns_equivalence_raw.csv
+2026-07-22 13:28:55 | INFO | 02_clean_rns_equivalence | Saved summary table to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\tables\02_clean_rns_equivalence_summary.csv
+2026-07-22 13:28:55 | INFO | 02_clean_rns_equivalence | Saved figure to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\figures\02_clean_rns_equivalence_stress_summary.png
+2026-07-22 13:28:55 | INFO | 02_clean_rns_equivalence | Saved metadata to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\02_clean_rns_equivalence_metadata.json
+2026-07-22 13:45:33 | INFO | 02_clean_rns_equivalence | Case tc1_small_low_precision uses RRNS(17, 19, 23)+(29) with max |accumulator|=325 and balanced limit=3714.
+2026-07-22 13:45:33 | INFO | 02_clean_rns_equivalence | Case tc2_medium_precision uses RRNS(17, 19, 23)+(29) with max |accumulator|=1797 and balanced limit=3714.
+2026-07-22 13:45:33 | INFO | 02_clean_rns_equivalence | Case tc3_large_kernel_high_precision uses RRNS(29, 31, 37)+(41) with max |accumulator|=14489 and balanced limit=16631.
+2026-07-22 13:45:33 | INFO | 02_clean_rns_equivalence | Case tc4_near_limit_stress uses RRNS(17, 19, 23)+(29) with max |accumulator|=2953 and balanced limit=3714.
+2026-07-22 13:45:35 | INFO | 02_clean_rns_equivalence | Saved raw outputs to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\02_clean_rns_equivalence_raw.csv
+2026-07-22 13:45:35 | INFO | 02_clean_rns_equivalence | Saved summary table to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\tables\02_clean_rns_equivalence_summary.csv
+2026-07-22 13:45:35 | INFO | 02_clean_rns_equivalence | Saved figure to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\figures\02_clean_rns_equivalence_stress_summary.png
+2026-07-22 13:45:35 | INFO | 02_clean_rns_equivalence | Saved metadata to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\02_clean_rns_equivalence_metadata.json
+2026-07-22 13:49:36 | INFO | 02_clean_rns_equivalence | Case tc1_small_low_precision uses RRNS(17, 19, 23)+(29) with max |accumulator|=325 and balanced limit=3714.
+2026-07-22 13:49:36 | INFO | 02_clean_rns_equivalence | Case tc2_medium_precision uses RRNS(17, 19, 23)+(29) with max |accumulator|=1797 and balanced limit=3714.
+2026-07-22 13:49:36 | INFO | 02_clean_rns_equivalence | Case tc3_large_kernel_high_precision uses RRNS(29, 31, 37)+(41) with max |accumulator|=14489 and balanced limit=16631.
+2026-07-22 13:49:36 | INFO | 02_clean_rns_equivalence | Case tc4_near_limit_stress uses RRNS(17, 19, 23)+(29) with max |accumulator|=2953 and balanced limit=3714.
+2026-07-22 13:49:38 | INFO | 02_clean_rns_equivalence | Saved raw outputs to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\02_clean_rns_equivalence_raw.csv
+2026-07-22 13:49:38 | INFO | 02_clean_rns_equivalence | Saved summary table to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\tables\02_clean_rns_equivalence_summary.csv
+2026-07-22 13:49:38 | INFO | 02_clean_rns_equivalence | Saved figure to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\figures\02_clean_rns_equivalence_stress_summary.png
+2026-07-22 13:49:38 | INFO | 02_clean_rns_equivalence | Saved metadata to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\02_clean_rns_equivalence_metadata.json

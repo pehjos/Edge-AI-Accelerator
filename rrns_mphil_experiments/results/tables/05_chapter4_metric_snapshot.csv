@@ -1,0 +1,11 @@
+Experiment,Evaluation Scope,Metric,Value
+quantization,Q4.4,RMSE,0.016555941523039
+quantization,Q5.5,RMSE,0.0083417802485398
+quantization,Q6.6,RMSE,0.0041917794758762
+clean_rns_equivalence,Worst case across test cases,Minimum exact-match rate,1.0
+clean_rns_equivalence,Worst case across test cases,Minimum checker-acceptance rate,1.0
+fault_injection,Single informative-channel faults,Minimum detection rate,1.0
+fault_injection,Two informative-channel faults,Maximum harmful-undetected rate,0.0458333333333333
+false_positive_test,Worst case across validation regimes,Maximum false-positive rate,0.0
+hardware_validation,Across validated RTL systems,Minimum simulation pass rate,1.0
+hardware_validation,Across validated RTL systems,Maximum residue-bit overhead ratio,0.375

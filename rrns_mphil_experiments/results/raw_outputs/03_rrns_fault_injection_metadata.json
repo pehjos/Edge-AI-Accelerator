@@ -1,0 +1,15 @@
+{
+  "seed": 7,
+  "trials_per_pattern": 240,
+  "fault_patterns": [
+    "single_informative",
+    "single_redundant",
+    "double_informative",
+    "informative_plus_redundant",
+    "double_random"
+  ],
+  "systems": [
+    "RRNS(17, 19, 23)+(29)",
+    "RRNS(29, 31, 37)+(41)"
+  ]
+}

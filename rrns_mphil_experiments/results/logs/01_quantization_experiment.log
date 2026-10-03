@@ -1,0 +1,42 @@
+2026-07-22 12:32:07 | INFO | 01_quantization_experiment | Processed format Q4.4 with 0 clipped values.
+2026-07-22 12:32:07 | INFO | 01_quantization_experiment | Processed format Q5.5 with 0 clipped values.
+2026-07-22 12:32:07 | INFO | 01_quantization_experiment | Processed format Q6.6 with 0 clipped values.
+2026-07-22 12:32:08 | INFO | 01_quantization_experiment | Saved raw outputs to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\01_quantization_raw.csv
+2026-07-22 12:32:08 | INFO | 01_quantization_experiment | Saved summary table to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\tables\01_quantization_summary.csv
+2026-07-22 12:32:08 | INFO | 01_quantization_experiment | Saved figure to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\figures\01_quantization_scatter.png
+2026-07-22 12:32:08 | INFO | 01_quantization_experiment | Saved metadata to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\01_quantization_metadata.json
+2026-07-22 12:33:32 | INFO | 01_quantization_experiment | Processed format Q4.4 with 0 clipped values.
+2026-07-22 12:33:32 | INFO | 01_quantization_experiment | Processed format Q5.5 with 0 clipped values.
+2026-07-22 12:33:32 | INFO | 01_quantization_experiment | Processed format Q6.6 with 0 clipped values.
+2026-07-22 12:33:34 | INFO | 01_quantization_experiment | Saved raw outputs to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\01_quantization_raw.csv
+2026-07-22 12:33:34 | INFO | 01_quantization_experiment | Saved summary table to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\tables\01_quantization_summary.csv
+2026-07-22 12:33:34 | INFO | 01_quantization_experiment | Saved figure to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\figures\01_quantization_scatter.png
+2026-07-22 12:33:34 | INFO | 01_quantization_experiment | Saved metadata to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\01_quantization_metadata.json
+2026-07-22 13:00:40 | INFO | 01_quantization_experiment | Processed format Q4.4 with 0 clipped values.
+2026-07-22 13:00:40 | INFO | 01_quantization_experiment | Processed format Q5.5 with 0 clipped values.
+2026-07-22 13:00:40 | INFO | 01_quantization_experiment | Processed format Q6.6 with 0 clipped values.
+2026-07-22 13:00:41 | INFO | 01_quantization_experiment | Saved raw outputs to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\01_quantization_raw.csv
+2026-07-22 13:00:41 | INFO | 01_quantization_experiment | Saved summary table to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\tables\01_quantization_summary.csv
+2026-07-22 13:00:41 | INFO | 01_quantization_experiment | Saved figure to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\figures\01_quantization_scatter.png
+2026-07-22 13:00:41 | INFO | 01_quantization_experiment | Saved metadata to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\01_quantization_metadata.json
+2026-07-22 13:28:54 | INFO | 01_quantization_experiment | Processed format Q4.4 with 0 clipped values.
+2026-07-22 13:28:54 | INFO | 01_quantization_experiment | Processed format Q5.5 with 0 clipped values.
+2026-07-22 13:28:54 | INFO | 01_quantization_experiment | Processed format Q6.6 with 0 clipped values.
+2026-07-22 13:28:55 | INFO | 01_quantization_experiment | Saved raw outputs to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\01_quantization_raw.csv
+2026-07-22 13:28:55 | INFO | 01_quantization_experiment | Saved summary table to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\tables\01_quantization_summary.csv
+2026-07-22 13:28:55 | INFO | 01_quantization_experiment | Saved figure to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\figures\01_quantization_scatter.png
+2026-07-22 13:28:55 | INFO | 01_quantization_experiment | Saved metadata to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\01_quantization_metadata.json
+2026-07-22 13:45:33 | INFO | 01_quantization_experiment | Processed format Q4.4 with 0 clipped values.
+2026-07-22 13:45:33 | INFO | 01_quantization_experiment | Processed format Q5.5 with 0 clipped values.
+2026-07-22 13:45:33 | INFO | 01_quantization_experiment | Processed format Q6.6 with 0 clipped values.
+2026-07-22 13:45:35 | INFO | 01_quantization_experiment | Saved raw outputs to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\01_quantization_raw.csv
+2026-07-22 13:45:35 | INFO | 01_quantization_experiment | Saved summary table to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\tables\01_quantization_summary.csv
+2026-07-22 13:45:35 | INFO | 01_quantization_experiment | Saved figure to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\figures\01_quantization_scatter.png
+2026-07-22 13:45:35 | INFO | 01_quantization_experiment | Saved metadata to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\01_quantization_metadata.json
+2026-07-22 13:49:31 | INFO | 01_quantization_experiment | Processed format Q4.4 with 0 clipped values.
+2026-07-22 13:49:31 | INFO | 01_quantization_experiment | Processed format Q5.5 with 0 clipped values.
+2026-07-22 13:49:31 | INFO | 01_quantization_experiment | Processed format Q6.6 with 0 clipped values.
+2026-07-22 13:49:33 | INFO | 01_quantization_experiment | Saved raw outputs to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\01_quantization_raw.csv
+2026-07-22 13:49:33 | INFO | 01_quantization_experiment | Saved summary table to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\tables\01_quantization_summary.csv
+2026-07-22 13:49:33 | INFO | 01_quantization_experiment | Saved figure to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\figures\01_quantization_scatter.png
+2026-07-22 13:49:33 | INFO | 01_quantization_experiment | Saved metadata to C:\Users\PehAttaJoseph\Documents\GitHub\Edge-AI-Accelerator\rrns_mphil_experiments\results\raw_outputs\01_quantization_metadata.json
